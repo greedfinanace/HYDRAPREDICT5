@@ -13,16 +13,16 @@ HydraPredict 5 is a full stack historical research and execution platform with:
 
 ```powershell
 python .\run_walkforward_backtest.py `
-  --source-root .\tmp_daily_etf26_cache `
-  --source-format auto `
-  --timeframe 1d `
-  --train-start 2017-01-03 `
-  --train-end 2022-12-30 `
-  --test-start 2023-01-03 `
-  --test-end 2023-12-29 `
-  --benchmark-symbol SPY `
-  --symbols SPY GLD IEF XLV XLK `
-  --output-root .\artifacts\hydrapredict5_run
+  source root .\tmp_daily_etf26_cache `
+  source format auto `
+  timeframe 1d `
+  train start 2017 01 03 `
+  train end 2022 12 30 `
+  test start 2023 01 03 `
+  test end 2023 12 29 `
+  benchmark symbol SPY `
+  symbols SPY GLD IEF XLV XLK `
+  output root .\artifacts\hydrapredict5_run
 ```
 
 Outputs:
@@ -35,8 +35,8 @@ Outputs:
 
 ```powershell
 python .\build_hydrapredict5_site.py `
-  --report-json .\artifacts\hydrapredict5_run\walkforward_report.json `
-  --output-root .\artifacts\hydrapredict5_site
+  report json .\artifacts\hydrapredict5_run\walkforward_report.json `
+  output root .\artifacts\hydrapredict5_site
 ```
 
 Outputs:
@@ -50,7 +50,7 @@ Outputs:
 ## 3) Serve Locally (Host Simulation)
 
 ```powershell
-python -m http.server 8080 --directory .\artifacts\hydrapredict5_site
+python -m http.server 8080 directory .\artifacts\hydrapredict5_site
 ```
 
 Open:

@@ -67,7 +67,7 @@ No server runtime is required after build.
 
 ## Project Entrypoints
 
-  run_walkforward_backtest.py -> historical walkforward evaluation
-  run_full_stack.py -> fetch/prepare/train/backtest pipeline
-  run_master_pipeline.py -> orchestrated master loop + state persistence
-  build_hydrapredict5_site.py -> static hosted report bundle
+  run_walkforward_backtest.py : historical walkforward evaluation
+  run_full_stack.py : fetch/prepare/train/backtest pipeline
+  run_master_pipeline.py : orchestrated master loop + state persistence
+  build_hydrapredict5_site.py : static hosted report bundle

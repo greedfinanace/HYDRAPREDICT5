@@ -1,0 +1,29 @@
+RESEARCH WALKFORWARD BACKTEST (1d)
+
+Universe Mode          : leveraged_sector_etfs
+Primary Strategy        : alpha_raw_long_only
+Universe               : SPY, SMH, SOXX, XLF, XBI, XLE
+
+PHASE 1: IN-SAMPLE (2017-01-03 to 2022-12-30)
+============================================================
+Starting Equity         : $1,000,000.00
+Ending Equity           : $906,084.59
+Total Return            : -9.39%
+Annualized Return       : -1.63%
+Annualized Volatility   : +6.93%
+Sharpe Ratio            : -0.20
+Max Drawdown            : -18.01%
+
+PHASE 2: OUT-OF-SAMPLE (2023-01-03 to 2023-12-29)
+============================================================
+Starting Equity         : $906,084.59
+Ending Equity           : $1,097,598.06
+Total Return            : +21.14%
+Annualized Return       : +21.48%
+Annualized Volatility   : +16.11%
+Sharpe Ratio            : 1.29
+Max Drawdown            : -12.66%
+
+[VERDICT]
+Status                 : REJECTED
+OOS performance does not satisfy the minimum robustness gate under strict execution frictions.

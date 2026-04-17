@@ -1,0 +1,21 @@
+[Unit]
+Description=Quant Stack Live Bridge
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=quant
+WorkingDirectory=/opt/quant-stack
+Environment=PYTHONUNBUFFERED=1
+EnvironmentFile=/opt/quant-stack/.env
+ExecStart=/opt/quant-stack/.venv/bin/python -m quant_stack.module7.live_signal_generator
+Restart=always
+RestartSec=5
+StartLimitBurst=10
+StartLimitIntervalSec=60
+TimeoutStopSec=20
+
+[Install]
+WantedBy=multi-user.target
+

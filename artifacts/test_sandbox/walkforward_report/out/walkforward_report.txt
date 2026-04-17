@@ -1,0 +1,29 @@
+HydraPredict 5 WALKFORWARD BACKTEST (60m)
+
+Universe Mode          : liquid_etfs
+Primary Engine         : HydraPredict 5 Adaptive Engine
+Universe               : AAA, BBB, SPY
+
+PHASE 1: IN-SAMPLE (2025-02-20 to 2025-04-10)
+============================================================
+Starting Equity         : $1,000,000.00
+Ending Equity           : $3,738,752.58
+Total Return            : +273.88%
+Annualized Return       : +1538969.08%
+Annualized Volatility   : +24.90%
+Sharpe Ratio            : 38.86
+Max Drawdown            : -0.67%
+
+PHASE 2: OUT-OF-SAMPLE (2025-04-11 to 2025-05-05)
+============================================================
+Starting Equity         : $3,738,752.58
+Ending Equity           : $33,130,500.97
+Total Return            : +786.14%
+Annualized Return       : +7346895032140067.00%
+Annualized Volatility   : +42.42%
+Sharpe Ratio            : 75.62
+Max Drawdown            : -0.44%
+
+[VERDICT]
+Status                 : CLEARED
+OOS Sharpe holds up against IS under strict costs with limited drawdown degradation.

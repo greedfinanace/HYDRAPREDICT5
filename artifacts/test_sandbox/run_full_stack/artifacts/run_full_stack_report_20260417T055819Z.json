@@ -1,0 +1,37 @@
+{
+  "product_name": "HydraPredict 5",
+  "timestamp": "20260417T055819Z",
+  "run_mode": "live_fetch",
+  "provider": "binance",
+  "symbols": [
+    "BTC/USDT"
+  ],
+  "lookback_days": 2,
+  "raw_rows_downloaded": 2,
+  "rows_downloaded": 2,
+  "module1_source_rows": 1,
+  "module1_stationary_rows": 1,
+  "module1_event_rows": 0,
+  "module1_label_rows": 0,
+  "integrity_raw": {
+    "ok": true,
+    "reason": "ok",
+    "gap_count": 0,
+    "zero_volume_bars": 0,
+    "raw_zero_volume_bars": 0,
+    "imputed_zero_volume_bars": 0
+  },
+  "integrity_cleaned": {
+    "ok": true,
+    "reason": "ok",
+    "gap_count": 0,
+    "zero_volume_bars": 0,
+    "raw_zero_volume_bars": 0,
+    "imputed_zero_volume_bars": 0
+  },
+  "meta_sharpe": 1.25,
+  "meta_max_drawdown": -0.12,
+  "meta_profit_factor": 1.4,
+  "artifacts_root": "artifacts\\test_sandbox\\run_full_stack\\artifacts",
+  "report_pdf": "artifacts\\test_sandbox\\run_full_stack\\artifacts\\reports\\backtest_report_20260417T055819Z.pdf"
+}

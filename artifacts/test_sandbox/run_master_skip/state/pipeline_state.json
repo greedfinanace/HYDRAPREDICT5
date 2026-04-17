@@ -1,0 +1,24 @@
+{
+  "last_fetch_time": "2026-04-17T05:58:19.976698+00:00",
+  "last_train_accuracy": 0.62,
+  "last_meta_sharpe": 1.25,
+  "last_rows_downloaded": 2,
+  "data_signature": {
+    "hash": "d7715ab9cc23f97788b3fa115538d3bb066955d004c6d4c707d3686edc2f91a2",
+    "payload": {
+      "provider": "binance",
+      "symbols": [
+        "BTC/USDT"
+      ],
+      "row_count": 2,
+      "latest_timestamp": "2026-01-02T14:01:00+00:00",
+      "written_files": [
+        {
+          "path": "C:\\WALKITALKIE\\artifacts\\test_sandbox\\run_master_skip\\market_data\\binance crypto\\0\\btcusdt\\20260102.parquet",
+          "size_bytes": -1,
+          "mtime_ns": -1
+        }
+      ]
+    }
+  }
+}

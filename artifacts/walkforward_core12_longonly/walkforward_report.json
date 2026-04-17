@@ -1,0 +1,92 @@
+{
+  "run_mode": "walkforward_local_source",
+  "timeframe": "1d",
+  "strategy_mode": "alpha_raw_long_only",
+  "train_period": {
+    "start": "2017-01-03",
+    "end": "2022-12-30"
+  },
+  "test_period": {
+    "start": "2023-01-03",
+    "end": "2023-12-29"
+  },
+  "universe": [
+    "SPY",
+    "QQQ",
+    "IWM",
+    "TLT",
+    "GLD",
+    "XLF",
+    "XLK",
+    "XLE",
+    "XLI",
+    "XLV",
+    "EEM",
+    "HYG"
+  ],
+  "benchmark_symbol": "SPY",
+  "is_metrics": {
+    "starting_equity": 1000000.0,
+    "ending_equity": 959912.1501968954,
+    "total_return": -0.04008784980310465,
+    "annualized_return": -0.006809657334095109,
+    "annualized_volatility": 0.017665250102156152,
+    "sharpe": -0.37797568018030675,
+    "sortino": -0.5116545513694867,
+    "max_drawdown": -0.05690015303833107,
+    "profit_factor": 0.6405975972055136,
+    "trade_count": 11.0,
+    "avg_exposure": 0.015110468966347601,
+    "avg_turnover": 0.0006622117873698152
+  },
+  "oos_metrics": {
+    "starting_equity": 959912.1501968954,
+    "ending_equity": 1093523.6552361185,
+    "total_return": 0.1391913885159355,
+    "annualized_return": 0.14135845877841513,
+    "annualized_volatility": 0.09909586530787122,
+    "sharpe": 1.3838559352087219,
+    "sortino": 2.5688475658408794,
+    "max_drawdown": -0.08987069852285146,
+    "profit_factor": 1.2765931076681412,
+    "trade_count": 11.0,
+    "avg_exposure": 0.8461818181818181,
+    "avg_turnover": 0.004
+  },
+  "benchmark_metrics": {
+    "in_sample": {
+      "starting_equity": 1000000.0,
+      "ending_equity": 1691432.749753346,
+      "total_return": 0.6914327497533459,
+      "annualized_return": 0.0917437956727909,
+      "annualized_volatility": 0.18601854952356606,
+      "sharpe": 0.5655065962601793,
+      "max_drawdown": -0.32446195367244046,
+      "profit_factor": 1.1133672478185255
+    },
+    "out_of_sample": {
+      "starting_equity": 959912.1501968954,
+      "ending_equity": 1189969.3963721762,
+      "total_return": 0.23966489655130618,
+      "annualized_return": 0.2435549806623829,
+      "annualized_volatility": 0.13414270017732258,
+      "sharpe": 1.692397615091731,
+      "max_drawdown": -0.09903706274918767,
+      "profit_factor": 1.312209396781702
+    }
+  },
+  "verdict": {
+    "status": "CANDIDATE",
+    "summary": "OOS performance clears the minimum research gate but does not yet meet the stretch target."
+  },
+  "module1": {
+    "bars": 19361,
+    "stationary": 19361,
+    "events": 802,
+    "labels": 802
+  },
+  "oos_trade_count": 660,
+  "report_txt": "artifacts\\walkforward_core12_longonly\\walkforward_report.txt",
+  "report_pdf": "artifacts\\walkforward_core12_longonly\\walkforward_report.pdf",
+  "curves_png": "artifacts\\walkforward_core12_longonly\\walkforward_equity_curves.png"
+}

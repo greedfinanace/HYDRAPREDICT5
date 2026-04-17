@@ -1,0 +1,28 @@
+RESEARCH WALKFORWARD BACKTEST (1d)
+
+Primary Strategy        : alpha_raw_long_only
+Universe               : SPY, QQQ, IWM, TLT, GLD, XLF, XLK, XLE, XLI, XLV, EEM, HYG
+
+PHASE 1: IN-SAMPLE (2017-01-03 to 2022-12-30)
+============================================================
+Starting Equity         : $1,000,000.00
+Ending Equity           : $959,912.15
+Total Return            : -4.01%
+Annualized Return       : -0.68%
+Annualized Volatility   : +1.77%
+Sharpe Ratio            : -0.38
+Max Drawdown            : -5.69%
+
+PHASE 2: OUT-OF-SAMPLE (2023-01-03 to 2023-12-29)
+============================================================
+Starting Equity         : $959,912.15
+Ending Equity           : $1,093,523.66
+Total Return            : +13.92%
+Annualized Return       : +14.14%
+Annualized Volatility   : +9.91%
+Sharpe Ratio            : 1.38
+Max Drawdown            : -8.99%
+
+[VERDICT]
+Status                 : CANDIDATE
+OOS performance clears the minimum research gate but does not yet meet the stretch target.

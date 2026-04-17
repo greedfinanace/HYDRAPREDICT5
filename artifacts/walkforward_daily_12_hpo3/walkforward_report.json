@@ -1,0 +1,92 @@
+{
+  "run_mode": "walkforward_local_source",
+  "timeframe": "1d",
+  "train_period": {
+    "start": "2017-01-03",
+    "end": "2022-12-30"
+  },
+  "test_period": {
+    "start": "2023-01-03",
+    "end": "2023-12-29"
+  },
+  "universe": [
+    "SPY",
+    "QQQ",
+    "IWM",
+    "TLT",
+    "GLD",
+    "XLF",
+    "XLK",
+    "XLE",
+    "XLI",
+    "XLV",
+    "EEM",
+    "HYG"
+  ],
+  "benchmark_symbol": "SPY",
+  "is_metrics": {
+    "starting_equity": 1000000.0,
+    "ending_equity": 935785.3056015297,
+    "total_return": -0.06421469439847038,
+    "annualized_return": -0.011023089775348494,
+    "annualized_volatility": 0.006328723596396134,
+    "sharpe": -1.7482239440189118,
+    "sortino": -2.1504192569791285,
+    "max_drawdown": -0.06806818688640703,
+    "profit_factor": 0.427703457540901,
+    "trade_count": 2255.0,
+    "avg_exposure": 0.01059151503532079,
+    "avg_turnover": 0.014716282704664149
+  },
+  "oos_metrics": {
+    "starting_equity": 935785.3056015297,
+    "ending_equity": 910979.1755326965,
+    "total_return": -0.026508356051698767,
+    "annualized_return": -0.026889691849235065,
+    "annualized_volatility": 0.011786259859806886,
+    "sharpe": -2.3066831557557657,
+    "sortino": -3.2635480226064866,
+    "max_drawdown": -0.028101303545733147,
+    "profit_factor": 0.538804140008987,
+    "trade_count": 1248.0,
+    "avg_exposure": 0.04097787027015197,
+    "avg_turnover": 0.03935251874657399
+  },
+  "benchmark_metrics": {
+    "in_sample": {
+      "starting_equity": 1000000.0,
+      "ending_equity": 1691432.749753346,
+      "total_return": 0.6914327497533459,
+      "annualized_return": 0.0917437956727909,
+      "annualized_volatility": 0.18601854952356606,
+      "sharpe": 0.5655065962601793,
+      "max_drawdown": -0.32446195367244046,
+      "profit_factor": 1.1133672478185255
+    },
+    "out_of_sample": {
+      "starting_equity": 935785.3056015297,
+      "ending_equity": 1160060.1940627526,
+      "total_return": 0.23966489655130618,
+      "annualized_return": 0.2435549806623829,
+      "annualized_volatility": 0.13414270017732258,
+      "sharpe": 1.692397615091731,
+      "max_drawdown": -0.09903706274918767,
+      "profit_factor": 1.312209396781702
+    }
+  },
+  "verdict": {
+    "status": "REJECTED",
+    "summary": "OOS performance does not satisfy the minimum robustness gate under strict execution frictions."
+  },
+  "module1": {
+    "bars": 19361,
+    "stationary": 19361,
+    "events": 3794,
+    "labels": 3794
+  },
+  "oos_trade_count": 1061,
+  "report_txt": "artifacts\\walkforward_daily_12_hpo3\\walkforward_report.txt",
+  "report_pdf": "artifacts\\walkforward_daily_12_hpo3\\walkforward_report.pdf",
+  "curves_png": "artifacts\\walkforward_daily_12_hpo3\\walkforward_equity_curves.png",
+  "best_params_path": "artifacts\\walkforward_daily_12_hpo3\\hpo\\best_params.json"
+}

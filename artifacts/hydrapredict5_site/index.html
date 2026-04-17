@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HydraPredict 5 Backtest Portal</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <h1 id="title">HydraPredict 5 Backtest Portal</h1>
+      <p id="subtitle">Loading report...</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="grid cards" id="key-cards"></section>
+
+    <section class="panel">
+      <h2>Run Configuration</h2>
+      <div id="config-grid" class="config-grid"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Performance Overview</h2>
+      <div class="chart-wrap">
+        <canvas id="metrics-chart"></canvas>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Equity Curves</h2>
+      <img id="curves-image" class="curves-image" alt="Equity curves" />
+      <p id="curves-missing" class="muted hidden">No equity curve image was bundled.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Phase Details</h2>
+      <pre id="report-text" class="mono"></pre>
+    </section>
+
+    <section class="panel">
+      <h2>Downloads</h2>
+      <div id="downloads" class="downloads"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Full Payload (Sanitized)</h2>
+      <details>
+        <summary>Open JSON</summary>
+        <pre id="raw-json" class="mono"></pre>
+      </details>
+    </section>
+
+    <section class="panel">
+      <h2>Diff Artifact</h2>
+      <pre id="diff-text" class="mono"></pre>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>

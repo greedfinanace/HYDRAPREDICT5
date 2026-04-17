@@ -1,0 +1,31 @@
+# HydraPredict 5 Git Ignore
+
+# Web folder (excluded as requested)
+web/
+
+# Caches and Temp files
+tmp*/
+tmp_daily_*_cache/
+.kiro/
+.hypothesis/
+.pytest_cache/
+__pycache__/
+*.pyc
+.vscode/
+
+# Data caches
+data/
+ycache/
+
+# Local output files (excluding artifacts if they are 'results')
+# The user wants "results and everything" but "other than the web file".
+# Usually artifacts/ contains the results.
+# I will NOT ignore artifacts/ to ensure they are pushed.
+
+# Development files
+diagnose.py
+test_*.py
+out*.txt
+profile_output.txt
+HE7QkJfaAAAdlRJ.png
+evret.txt

@@ -1,0 +1,88 @@
+{
+  "product_name": "HydraPredict 5",
+  "run_mode": "walkforward_local_source",
+  "timeframe": "60m",
+  "universe_mode": "tight_liquid_etfs",
+  "strategy_mode": "meta",
+  "strategy_label": "HydraPredict 5 Adaptive Engine",
+  "train_period": {
+    "start": "2025-02-20",
+    "end": "2025-04-10"
+  },
+  "test_period": {
+    "start": "2025-04-11",
+    "end": "2025-05-05"
+  },
+  "universe": [
+    "SPY",
+    "AAA"
+  ],
+  "benchmark_symbol": "SPY",
+  "universe_search": {
+    "objective": "direct_symbol_resolution"
+  },
+  "is_metrics": {
+    "starting_equity": 1000000.0,
+    "ending_equity": 5612299.303297463,
+    "total_return": 4.612299303297463,
+    "annualized_return": 299941.43751380156,
+    "annualized_volatility": 0.349858261454323,
+    "sharpe": 36.24625974661801,
+    "sortino": 325.56195779385973,
+    "max_drawdown": -0.005468733046563368,
+    "profit_factor": 10.448191169173825,
+    "trade_count": 604.0,
+    "avg_exposure": 0.10099069316200904,
+    "avg_turnover": 0.1435924623798741
+  },
+  "oos_metrics": {
+    "starting_equity": 5612299.303297463,
+    "ending_equity": 44704179.50182405,
+    "total_return": 6.965394767089213,
+    "annualized_return": 15439020736060.244,
+    "annualized_volatility": 0.5000889746242279,
+    "sharpe": 61.078033559358815,
+    "sortino": 445.8660356985933,
+    "max_drawdown": -0.0048892747914465184,
+    "profit_factor": 9.244831932254838,
+    "trade_count": 646.0,
+    "avg_exposure": 0.2625102526630299,
+    "avg_turnover": 0.3688384469139846
+  },
+  "benchmark_metrics": {
+    "in_sample": {
+      "starting_equity": 1000000.0,
+      "ending_equity": 67339.91630071845,
+      "total_return": -0.9326600836992816,
+      "annualized_return": -0.9999999972873591,
+      "annualized_volatility": 1.736815220559828,
+      "sharpe": -10.476653378295891,
+      "max_drawdown": -0.9817205038914033,
+      "profit_factor": 0.7740409107801554
+    },
+    "out_of_sample": {
+      "starting_equity": 5612299.303297463,
+      "ending_equity": 3479171.5025612162,
+      "total_return": -0.38008090542907147,
+      "annualized_return": -0.9990859931215693,
+      "annualized_volatility": 1.6783247012587832,
+      "sharpe": -3.33062797073095,
+      "max_drawdown": -0.9817128953927503,
+      "profit_factor": 0.9208827213513111
+    }
+  },
+  "verdict": {
+    "status": "CLEARED",
+    "summary": "OOS Sharpe holds up against IS under strict costs with limited drawdown degradation."
+  },
+  "module1": {
+    "bars": 3600,
+    "stationary": 3600,
+    "events": 829,
+    "labels": 829
+  },
+  "oos_trade_count": 379,
+  "report_txt": "artifacts\\test_sandbox\\walkforward_tight_universe\\out\\walkforward_report.txt",
+  "report_pdf": "artifacts\\test_sandbox\\walkforward_tight_universe\\out\\walkforward_report.pdf",
+  "curves_png": "artifacts\\test_sandbox\\walkforward_tight_universe\\out\\walkforward_equity_curves.png"
+}

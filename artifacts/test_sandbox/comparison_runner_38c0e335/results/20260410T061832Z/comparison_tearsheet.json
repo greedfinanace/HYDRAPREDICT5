@@ -1,0 +1,28 @@
+[
+  {
+    "run_name": "dense_volume_bar",
+    "bars": 2477,
+    "events": 2163,
+    "labels": 2163,
+    "meta_sharpe": 294.59662139018826,
+    "meta_max_drawdown": -0.0027950678370269877,
+    "meta_profit_factor": 6.693774128406146,
+    "alpha_sharpe": 395.1489226235529,
+    "alpha_max_drawdown": -0.00938335817929492,
+    "alpha_profit_factor": 7.27125032115126,
+    "drawdown_reduction_pct": 70.21249979357589
+  },
+  {
+    "run_name": "hourly_baseline",
+    "bars": 1260,
+    "events": 296,
+    "labels": 296,
+    "meta_sharpe": 40.96658298098599,
+    "meta_max_drawdown": -0.005097182532501909,
+    "meta_profit_factor": 34.083139792902124,
+    "alpha_sharpe": 46.22268505165415,
+    "alpha_max_drawdown": -0.018084887685384854,
+    "alpha_profit_factor": 72.21497572480753,
+    "drawdown_reduction_pct": 71.81523810832869
+  }
+]

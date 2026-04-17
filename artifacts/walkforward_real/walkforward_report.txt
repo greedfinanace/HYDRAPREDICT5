@@ -1,0 +1,27 @@
+RESEARCH WALKFORWARD BACKTEST (60m)
+
+Universe               : AADR, ACWI, AAXJ, AIRR, AIQ, ARKK, ARKG
+
+PHASE 1: IN-SAMPLE (2025-02-20 to 2025-10-31)
+============================================================
+Starting Equity         : $1,000,000.00
+Ending Equity           : $984,961.60
+Total Return            : -1.50%
+Annualized Return       : -2.16%
+Annualized Volatility   : +0.53%
+Sharpe Ratio            : -4.13
+Max Drawdown            : -1.56%
+
+PHASE 2: OUT-OF-SAMPLE (2025-11-01 to 2026-02-28)
+============================================================
+Starting Equity         : $984,961.60
+Ending Equity           : $901,598.26
+Total Return            : -8.46%
+Annualized Return       : -24.26%
+Annualized Volatility   : +2.64%
+Sharpe Ratio            : -10.53
+Max Drawdown            : -8.58%
+
+[VERDICT]
+Status                 : REJECTED
+OOS performance does not satisfy the minimum robustness gate under strict execution frictions.

@@ -1,0 +1,55 @@
+{
+  "objective": {
+    "name": "robust_is_validation_score",
+    "best_value": -4.130475709997734,
+    "trial_number": 4
+  },
+  "module1": {
+    "fracdiff_d": 0.75,
+    "weight_eps": 1.4063366777718187e-06,
+    "cusum_sigma_mult": 0.877315024952477,
+    "pt_mult": 1.2317381190502594,
+    "sl_mult": 2.7262068517511873,
+    "volume_threshold_multiplier": 53.63086887792905,
+    "vertical_barrier_days": 20.0
+  },
+  "module3": {
+    "num_leaves": 28,
+    "learning_rate": 0.004187594718900628,
+    "feature_fraction": 0.6300733288106988,
+    "min_child_samples": 45,
+    "subsample": 0.8187787356776066
+  },
+  "module4": {
+    "num_leaves": 136,
+    "learning_rate": 0.008798929749689027,
+    "feature_fraction": 0.5478376983753207,
+    "probability_floor": 0.39228463297264726,
+    "bet_sizing_power": 1.9617663593880192,
+    "min_child_samples": 36
+  },
+  "module5": {
+    "meta_prob_win_threshold": 0.4625803079727366
+  },
+  "trial_user_attributes": {
+    "validation": {
+      "validation_sharpes": [
+        -3.8719473305706256,
+        -2.3598679164446463,
+        -3.4659537212162985
+      ],
+      "validation_mdds": [
+        -0.00312002923947019,
+        -0.021581434493988194,
+        -0.033685728195428144
+      ],
+      "validation_turnovers": [
+        0.012302303453131906,
+        0.04777384173854884,
+        0.06176594332844119
+      ],
+      "validation_non_positive_ratio": 1.0,
+      "median_validation_sharpe": -3.4659537212162985
+    }
+  }
+}

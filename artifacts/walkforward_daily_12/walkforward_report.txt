@@ -1,0 +1,27 @@
+RESEARCH WALKFORWARD BACKTEST (1d)
+
+Universe               : SPY, QQQ, IWM, TLT, GLD, XLF, XLK, XLE, XLI, XLV, EEM, HYG
+
+PHASE 1: IN-SAMPLE (2017-01-03 to 2022-12-30)
+============================================================
+Starting Equity         : $1,000,000.00
+Ending Equity           : $1,000,000.00
+Total Return            : +0.00%
+Annualized Return       : +0.00%
+Annualized Volatility   : +0.00%
+Sharpe Ratio            : 0.00
+Max Drawdown            : +0.00%
+
+PHASE 2: OUT-OF-SAMPLE (2023-01-03 to 2023-12-29)
+============================================================
+Starting Equity         : $1,000,000.00
+Ending Equity           : $1,000,000.00
+Total Return            : +0.00%
+Annualized Return       : +0.00%
+Annualized Volatility   : +0.00%
+Sharpe Ratio            : 0.00
+Max Drawdown            : +0.00%
+
+[VERDICT]
+Status                 : REJECTED
+OOS performance does not satisfy the minimum robustness gate under strict execution frictions.

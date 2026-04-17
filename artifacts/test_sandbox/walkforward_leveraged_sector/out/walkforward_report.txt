@@ -1,0 +1,29 @@
+HydraPredict 5 WALKFORWARD BACKTEST (60m)
+
+Universe Mode          : leveraged_sector_etfs
+Primary Engine         : HydraPredict 5 Core Engine
+Universe               : SPY, SOXL
+
+PHASE 1: IN-SAMPLE (2025-02-20 to 2025-04-10)
+============================================================
+Starting Equity         : $1,000,000.00
+Ending Equity           : $442,814.75
+Total Return            : -55.72%
+Annualized Return       : -99.74%
+Annualized Volatility   : +29.01%
+Sharpe Ratio            : -20.37
+Max Drawdown            : -74.61%
+
+PHASE 2: OUT-OF-SAMPLE (2025-04-11 to 2025-05-05)
+============================================================
+Starting Equity         : $442,814.75
+Ending Equity           : $519,806.78
+Total Return            : +17.39%
+Annualized Return       : +944.35%
+Annualized Volatility   : +111.67%
+Sharpe Ratio            : 2.66
+Max Drawdown            : -94.66%
+
+[VERDICT]
+Status                 : REJECTED
+OOS performance does not satisfy the minimum robustness gate under strict execution frictions.

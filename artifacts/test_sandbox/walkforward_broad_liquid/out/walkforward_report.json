@@ -1,0 +1,132 @@
+{
+  "product_name": "HydraPredict 5",
+  "run_mode": "walkforward_local_source",
+  "timeframe": "60m",
+  "universe_mode": "broad_liquid_etfs",
+  "strategy_mode": "alpha_raw_long_only",
+  "strategy_label": "HydraPredict 5 Core Engine",
+  "train_period": {
+    "start": "2025-02-20",
+    "end": "2025-04-10"
+  },
+  "test_period": {
+    "start": "2025-04-11",
+    "end": "2025-05-05"
+  },
+  "universe": [
+    "SPY",
+    "SOXL"
+  ],
+  "benchmark_symbol": "SPY",
+  "universe_search": {
+    "objective": "training_window_backtest",
+    "strategy_mode": "alpha_raw_long_only",
+    "candidate_pool": [
+      "SPY",
+      "SOXL",
+      "TQQQ",
+      "XLK",
+      "XLF"
+    ],
+    "candidate_pool_size": 5,
+    "target_size_max": 4,
+    "evaluation_count": 1,
+    "top_evaluations": [
+      {
+        "target_size": 2,
+        "symbols": [
+          "SPY",
+          "SOXL"
+        ],
+        "score": 9.225403899911734,
+        "proxy_score": 649.7950123551959,
+        "proxy_train_sharpe": 3.9220061501879937,
+        "proxy_train_max_drawdown": -0.9455949693938918,
+        "validation_median_sharpe": 9.2254455665784,
+        "validation_non_positive_ratio": 0.0,
+        "objective_used": "full_train_backtest"
+      }
+    ],
+    "selected_score": 9.225403899911734,
+    "selected_train_metrics": {
+      "objective_used": "full_train_backtest",
+      "fallback_reason": "Nested validation produced no usable windows.",
+      "median_validation_sharpe": 9.2254455665784,
+      "validation_non_positive_ratio": 0.0,
+      "validation_sharpes": [
+        9.2254455665784
+      ],
+      "validation_mdds": [
+        0.0
+      ],
+      "validation_turnovers": [
+        0.0008333333333333334
+      ]
+    },
+    "selected_target_size": 2
+  },
+  "is_metrics": {
+    "starting_equity": 1000000.0,
+    "ending_equity": 442814.75310609426,
+    "total_return": -0.5571852468939058,
+    "annualized_return": -0.997408824149366,
+    "annualized_volatility": 0.290143949765652,
+    "sharpe": -20.37433784125108,
+    "sortino": -25.636553404655345,
+    "max_drawdown": -0.746064468493697,
+    "profit_factor": 0.41710210921038465,
+    "trade_count": 2.0,
+    "avg_exposure": 0.18875,
+    "avg_turnover": 0.0008333333333333334
+  },
+  "oos_metrics": {
+    "starting_equity": 442814.75310609426,
+    "ending_equity": 519806.77537622576,
+    "total_return": 0.1738695961010246,
+    "annualized_return": 9.443453677237674,
+    "annualized_volatility": 1.1167449293250138,
+    "sharpe": 2.657747796940228,
+    "sortino": 5.011121873244181,
+    "max_drawdown": -0.9466265646193877,
+    "profit_factor": 1.0687455169092752,
+    "trade_count": 2.0,
+    "avg_exposure": 0.94,
+    "avg_turnover": 0.0016666666666666668
+  },
+  "benchmark_metrics": {
+    "in_sample": {
+      "starting_equity": 1000000.0,
+      "ending_equity": 1442260.94882961,
+      "total_return": 0.44226094882960987,
+      "annualized_return": 13.547362849250128,
+      "annualized_volatility": 1.1399154453955944,
+      "sharpe": 2.9184356254766777,
+      "max_drawdown": -0.9565197748481349,
+      "profit_factor": 1.0724418673280045
+    },
+    "out_of_sample": {
+      "starting_equity": 442814.75310609426,
+      "ending_equity": 589906.6453841191,
+      "total_return": 0.3321747779319879,
+      "annualized_return": 65.50853195589954,
+      "annualized_volatility": 1.1553368406932145,
+      "sharpe": 4.210290882849658,
+      "max_drawdown": -0.9550267040355728,
+      "profit_factor": 1.1068361957201456
+    }
+  },
+  "verdict": {
+    "status": "REJECTED",
+    "summary": "OOS performance does not satisfy the minimum robustness gate under strict execution frictions."
+  },
+  "module1": {
+    "bars": 3600,
+    "stationary": 3600,
+    "events": 572,
+    "labels": 572
+  },
+  "oos_trade_count": 399,
+  "report_txt": "artifacts\\test_sandbox\\walkforward_broad_liquid\\out\\walkforward_report.txt",
+  "report_pdf": "artifacts\\test_sandbox\\walkforward_broad_liquid\\out\\walkforward_report.pdf",
+  "curves_png": "artifacts\\test_sandbox\\walkforward_broad_liquid\\out\\walkforward_equity_curves.png"
+}

@@ -1,0 +1,456 @@
+{
+  "run_mode": "walkforward_local_source",
+  "timeframe": "1d",
+  "universe_mode": "leveraged_sector_etfs",
+  "strategy_mode": "alpha_raw_long_only",
+  "train_period": {
+    "start": "2017-01-03",
+    "end": "2022-12-30"
+  },
+  "test_period": {
+    "start": "2023-01-03",
+    "end": "2023-12-29"
+  },
+  "universe": [
+    "SPY",
+    "SMH",
+    "XLE",
+    "XLF"
+  ],
+  "benchmark_symbol": "SPY",
+  "universe_search": {
+    "objective": "training_window_backtest",
+    "strategy_mode": "alpha_raw_long_only",
+    "candidate_sizes": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evaluations": [
+      {
+        "target_size": 4,
+        "symbols": [
+          "SPY",
+          "SMH",
+          "SOXX",
+          "XLF"
+        ],
+        "score": -0.5710661250589786,
+        "train_sharpe": -0.17712612728581545,
+        "train_sortino": -0.2528355440272928,
+        "train_max_drawdown": -0.262610108890718,
+        "train_profit_factor": 0.9393691275579461,
+        "train_annualized_return": -0.02089669011504447,
+        "train_annualized_volatility": 0.09418888805473029,
+        "avg_turnover": 0.0004966887417218543,
+        "avg_exposure": 0.1610927152317881
+      },
+      {
+        "target_size": 5,
+        "symbols": [
+          "SPY",
+          "SMH",
+          "SOXX",
+          "XLF",
+          "XBI"
+        ],
+        "score": -0.6545838719224528,
+        "train_sharpe": -0.2384005722768104,
+        "train_sortino": -0.3377496122008396,
+        "train_max_drawdown": -0.27743787305294487,
+        "train_profit_factor": 0.919951232773004,
+        "train_annualized_return": -0.030525208985227148,
+        "train_annualized_volatility": 0.10631229122297038,
+        "avg_turnover": 0.0005298013245033113,
+        "avg_exposure": 0.17139072847682119
+      },
+      {
+        "target_size": 6,
+        "symbols": [
+          "SPY",
+          "SMH",
+          "SOXX",
+          "XLF",
+          "XBI",
+          "XLE"
+        ],
+        "score": -0.6035572887763944,
+        "train_sharpe": -0.2518542889631469,
+        "train_sortino": -0.35733509661410795,
+        "train_max_drawdown": -0.23445027066284196,
+        "train_profit_factor": 0.915793589211228,
+        "train_annualized_return": -0.026373924566801432,
+        "train_annualized_volatility": 0.09002791224223737,
+        "avg_turnover": 0.0005518763796909492,
+        "avg_exposure": 0.14580573951434878
+      },
+      {
+        "target_size": 4,
+        "symbols": [
+          "SPY",
+          "SMH",
+          "SOXX",
+          "XBI"
+        ],
+        "score": -0.6819653241561766,
+        "train_sharpe": -0.25597799093799,
+        "train_sortino": -0.36193348268218156,
+        "train_max_drawdown": -0.2839749991874003,
+        "train_profit_factor": 0.9153347993949146,
+        "train_annualized_return": -0.03404278464434651,
+        "train_annualized_volatility": 0.11115166365606631,
+        "avg_turnover": 0.0004966887417218543,
+        "avg_exposure": 0.16026490066225166
+      },
+      {
+        "target_size": 4,
+        "symbols": [
+          "SPY",
+          "SMH",
+          "SOXX",
+          "XLE"
+        ],
+        "score": -0.5214610602938557,
+        "train_sharpe": -0.21550731396044182,
+        "train_sortino": -0.30815448829080144,
+        "train_max_drawdown": -0.2039526079308852,
+        "train_profit_factor": 0.9276121892202667,
+        "train_annualized_return": -0.01829545647590991,
+        "train_annualized_volatility": 0.07324247286268076,
+        "avg_turnover": 0.0004966887417218543,
+        "avg_exposure": 0.11158940397350993
+      },
+      {
+        "target_size": 4,
+        "symbols": [
+          "SPY",
+          "SMH",
+          "XBI",
+          "XLE"
+        ],
+        "score": -0.6197401498792683,
+        "train_sharpe": -0.311812914295521,
+        "train_sortino": -0.44280220402893744,
+        "train_max_drawdown": -0.2052682674311075,
+        "train_profit_factor": 0.8974429620520128,
+        "train_annualized_return": -0.02492857467147991,
+        "train_annualized_volatility": 0.0725245405207651,
+        "avg_turnover": 0.0004966887417218543,
+        "avg_exposure": 0.11142384105960265
+      },
+      {
+        "target_size": 4,
+        "symbols": [
+          "SPY",
+          "SMH",
+          "XBI",
+          "XLF"
+        ],
+        "score": -0.643257143070221,
+        "train_sharpe": -0.2572997303919251,
+        "train_sortino": -0.36383420283617585,
+        "train_max_drawdown": -0.2572883854941398,
+        "train_profit_factor": 0.9136034224259992,
+        "train_annualized_return": -0.027312883883725436,
+        "train_annualized_volatility": 0.09138413274643671,
+        "avg_turnover": 0.0004966887417218543,
+        "avg_exposure": 0.1609271523178808
+      },
+      {
+        "target_size": 4,
+        "symbols": [
+          "SPY",
+          "SMH",
+          "XLE",
+          "XLF"
+        ],
+        "score": -0.41295469444869215,
+        "train_sharpe": -0.19968759215702345,
+        "train_sortino": -0.2816603883409983,
+        "train_max_drawdown": -0.14216151190305504,
+        "train_profit_factor": 0.930389831866334,
+        "train_annualized_return": -0.012243866119682645,
+        "train_annualized_volatility": 0.054309943061419445,
+        "avg_turnover": 0.0004966887417218543,
+        "avg_exposure": 0.11225165562913907
+      },
+      {
+        "target_size": 4,
+        "symbols": [
+          "SPY",
+          "SOXX",
+          "XBI",
+          "XLE"
+        ],
+        "score": -0.69766582013758,
+        "train_sharpe": -0.2716702087736981,
+        "train_sortino": -0.38480852215816413,
+        "train_max_drawdown": -0.2839749991874003,
+        "train_profit_factor": 0.9104119551667832,
+        "train_annualized_return": -0.03652207489850989,
+        "train_annualized_volatility": 0.11330691942054535,
+        "avg_turnover": 0.0006622516556291391,
+        "avg_exposure": 0.16473509933774835
+      },
+      {
+        "target_size": 4,
+        "symbols": [
+          "SPY",
+          "SOXX",
+          "XBI",
+          "XLF"
+        ],
+        "score": -0.7473100211093242,
+        "train_sharpe": -0.23840057227681033,
+        "train_sortino": -0.3377496122008398,
+        "train_max_drawdown": -0.33925089083315496,
+        "train_profit_factor": 0.9199512327730038,
+        "train_annualized_return": -0.03971233440397781,
+        "train_annualized_volatility": 0.13289036402871302,
+        "avg_turnover": 0.0006622516556291391,
+        "avg_exposure": 0.2142384105960265
+      },
+      {
+        "target_size": 4,
+        "symbols": [
+          "SPY",
+          "SOXX",
+          "XLE",
+          "XLF"
+        ],
+        "score": -0.591087267694514,
+        "train_sharpe": -0.1971389917756555,
+        "train_sortino": -0.2817493832894677,
+        "train_max_drawdown": -0.262610108890718,
+        "train_profit_factor": 0.9329055477395484,
+        "train_annualized_return": -0.02338383747994721,
+        "train_annualized_volatility": 0.09644488746557833,
+        "avg_turnover": 0.0006622516556291391,
+        "avg_exposure": 0.16556291390728478
+      },
+      {
+        "target_size": 4,
+        "symbols": [
+          "SPY",
+          "XBI",
+          "XLE",
+          "XLF"
+        ],
+        "score": -0.6615253034068224,
+        "train_sharpe": -0.2755596125828312,
+        "train_sortino": -0.3903786566372091,
+        "train_max_drawdown": -0.2572883854941398,
+        "train_profit_factor": 0.9079370245598545,
+        "train_annualized_return": -0.029790939334470967,
+        "train_annualized_volatility": 0.09378314687671796,
+        "avg_turnover": 0.0006622516556291391,
+        "avg_exposure": 0.1653973509933775
+      },
+      {
+        "target_size": 5,
+        "symbols": [
+          "SPY",
+          "SMH",
+          "SOXX",
+          "XBI",
+          "XLE"
+        ],
+        "score": -0.6180965123712582,
+        "train_sharpe": -0.27167020877369796,
+        "train_sortino": -0.3848085221581647,
+        "train_max_drawdown": -0.2309332090208901,
+        "train_profit_factor": 0.9104119551667833,
+        "train_annualized_return": -0.028326712539390342,
+        "train_annualized_volatility": 0.09064553553643628,
+        "avg_turnover": 0.0005298013245033113,
+        "avg_exposure": 0.1317880794701987
+      },
+      {
+        "target_size": 5,
+        "symbols": [
+          "SPY",
+          "SMH",
+          "SOXX",
+          "XBI",
+          "XLF"
+        ],
+        "score": -0.6545838719224528,
+        "train_sharpe": -0.2384005722768104,
+        "train_sortino": -0.3377496122008396,
+        "train_max_drawdown": -0.27743787305294487,
+        "train_profit_factor": 0.919951232773004,
+        "train_annualized_return": -0.030525208985227148,
+        "train_annualized_volatility": 0.10631229122297038,
+        "avg_turnover": 0.0005298013245033113,
+        "avg_exposure": 0.17139072847682119
+      },
+      {
+        "target_size": 5,
+        "symbols": [
+          "SPY",
+          "SMH",
+          "SOXX",
+          "XLE",
+          "XLF"
+        ],
+        "score": -0.5182660822537363,
+        "train_sharpe": -0.1971389917756556,
+        "train_sortino": -0.2817493832894683,
+        "train_max_drawdown": -0.214067066941237,
+        "train_profit_factor": 0.9329055477395484,
+        "train_annualized_return": -0.018020968139505156,
+        "train_annualized_volatility": 0.07715590997246267,
+        "avg_turnover": 0.0005298013245033113,
+        "avg_exposure": 0.13245033112582782
+      },
+      {
+        "target_size": 5,
+        "symbols": [
+          "SPY",
+          "SMH",
+          "XBI",
+          "XLE",
+          "XLF"
+        ],
+        "score": -0.5906666080911686,
+        "train_sharpe": -0.2755596125828313,
+        "train_sortino": -0.39037865663721005,
+        "train_max_drawdown": -0.21005367029474142,
+        "train_profit_factor": 0.9079370245598544,
+        "train_annualized_return": -0.023216321286100072,
+        "train_annualized_volatility": 0.07502651750137433,
+        "avg_turnover": 0.0005298013245033113,
+        "avg_exposure": 0.132317880794702
+      },
+      {
+        "target_size": 5,
+        "symbols": [
+          "SPY",
+          "SOXX",
+          "XBI",
+          "XLE",
+          "XLF"
+        ],
+        "score": -0.6680442111253457,
+        "train_sharpe": -0.2518542889631469,
+        "train_sortino": -0.35733509661410856,
+        "train_max_drawdown": -0.27743787305294487,
+        "train_profit_factor": 0.9157935892112282,
+        "train_annualized_return": -0.032507718608369096,
+        "train_annualized_volatility": 0.10803349469068486,
+        "avg_turnover": 0.0006622516556291391,
+        "avg_exposure": 0.17496688741721855
+      },
+      {
+        "target_size": 6,
+        "symbols": [
+          "SPY",
+          "SMH",
+          "SOXX",
+          "XBI",
+          "XLE",
+          "XLF"
+        ],
+        "score": -0.6035572887763944,
+        "train_sharpe": -0.2518542889631469,
+        "train_sortino": -0.35733509661410795,
+        "train_max_drawdown": -0.23445027066284196,
+        "train_profit_factor": 0.915793589211228,
+        "train_annualized_return": -0.026373924566801432,
+        "train_annualized_volatility": 0.09002791224223737,
+        "avg_turnover": 0.0005518763796909492,
+        "avg_exposure": 0.14580573951434878
+      }
+    ],
+    "selected_score": -0.41295469444869215,
+    "selected_train_metrics": {
+      "starting_equity": 1000000.0,
+      "ending_equity": 928890.088307,
+      "total_return": -0.07110991169299996,
+      "annualized_return": -0.012243866119682645,
+      "annualized_volatility": 0.054309943061419445,
+      "sharpe": -0.19968759215702345,
+      "sortino": -0.2816603883409983,
+      "max_drawdown": -0.14216151190305504,
+      "profit_factor": 0.930389831866334,
+      "trade_count": 3.0,
+      "avg_exposure": 0.11225165562913907,
+      "avg_turnover": 0.0004966887417218543
+    },
+    "selected_target_size": 4,
+    "candidate_pool": [
+      "SMH",
+      "SOXX",
+      "SPY",
+      "XBI",
+      "XLE",
+      "XLF"
+    ]
+  },
+  "is_metrics": {
+    "starting_equity": 1000000.0,
+    "ending_equity": 915027.2341715584,
+    "total_return": -0.0849727658284416,
+    "annualized_return": -0.014721261746232228,
+    "annualized_volatility": 0.05478150802556438,
+    "sharpe": -0.24341185665983492,
+    "sortino": -0.3554797886108565,
+    "max_drawdown": -0.1354515751113643,
+    "profit_factor": 0.914764903800672,
+    "trade_count": 4.0,
+    "avg_exposure": 0.06539735099337748,
+    "avg_turnover": 0.0006622516556291391
+  },
+  "oos_metrics": {
+    "starting_equity": 915027.2341715584,
+    "ending_equity": 1083003.4060387113,
+    "total_return": 0.1835750517515844,
+    "annualized_return": 0.18648770172905582,
+    "annualized_volatility": 0.14915371425008045,
+    "sharpe": 1.2211332037108213,
+    "sortino": 2.0766879199594697,
+    "max_drawdown": -0.08770955568629113,
+    "profit_factor": 1.231313229925384,
+    "trade_count": 4.0,
+    "avg_exposure": 0.854,
+    "avg_turnover": 0.004
+  },
+  "benchmark_metrics": {
+    "in_sample": {
+      "starting_equity": 1000000.0,
+      "ending_equity": 1691432.749753346,
+      "total_return": 0.6914327497533459,
+      "annualized_return": 0.0917437956727909,
+      "annualized_volatility": 0.18601854952356606,
+      "sharpe": 0.5655065962601793,
+      "max_drawdown": -0.32446195367244046,
+      "profit_factor": 1.1133672478185255
+    },
+    "out_of_sample": {
+      "starting_equity": 915027.2341715584,
+      "ending_equity": 1134327.1415909128,
+      "total_return": 0.23966489655130618,
+      "annualized_return": 0.2435549806623829,
+      "annualized_volatility": 0.13414270017732258,
+      "sharpe": 1.692397615091731,
+      "max_drawdown": -0.09903706274918767,
+      "profit_factor": 1.312209396781702
+    }
+  },
+  "verdict": {
+    "status": "REJECTED",
+    "summary": "OOS performance does not satisfy the minimum robustness gate under strict execution frictions."
+  },
+  "module1": {
+    "bars": 7040,
+    "stationary": 7040,
+    "events": 402,
+    "labels": 402
+  },
+  "oos_trade_count": 268,
+  "report_txt": "artifacts\\walkforward_leveraged_search_alpha_exhaustive\\walkforward_report.txt",
+  "report_pdf": "artifacts\\walkforward_leveraged_search_alpha_exhaustive\\walkforward_report.pdf",
+  "curves_png": "artifacts\\walkforward_leveraged_search_alpha_exhaustive\\walkforward_equity_curves.png"
+}

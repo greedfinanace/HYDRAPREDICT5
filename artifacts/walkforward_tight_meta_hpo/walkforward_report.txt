@@ -1,0 +1,29 @@
+RESEARCH WALKFORWARD BACKTEST (1d)
+
+Universe Mode          : tight_liquid_etfs
+Primary Strategy        : meta
+Universe               : SPY, GLD, IEF, XLV, XLK
+
+PHASE 1: IN-SAMPLE (2017-01-03 to 2022-12-30)
+============================================================
+Starting Equity         : $1,000,000.00
+Ending Equity           : $910,969.79
+Total Return            : -8.90%
+Annualized Return       : -1.55%
+Annualized Volatility   : +0.62%
+Sharpe Ratio            : -2.52
+Max Drawdown            : -9.02%
+
+PHASE 2: OUT-OF-SAMPLE (2023-01-03 to 2023-12-29)
+============================================================
+Starting Equity         : $910,969.79
+Ending Equity           : $887,124.94
+Total Return            : -2.62%
+Annualized Return       : -2.66%
+Annualized Volatility   : +0.93%
+Sharpe Ratio            : -2.89
+Max Drawdown            : -2.65%
+
+[VERDICT]
+Status                 : REJECTED
+OOS performance does not satisfy the minimum robustness gate under strict execution frictions.

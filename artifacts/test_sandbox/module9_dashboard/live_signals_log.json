@@ -1,0 +1,18 @@
+[
+  {
+    "timestamp": "2026-01-02T09:30:00Z",
+    "symbol": "TEST/USD",
+    "final_action": "buy",
+    "bet_size": 0.4,
+    "pred_prob_win": 0.7,
+    "regime_label": "bull"
+  },
+  {
+    "timestamp": "2026-01-02T09:31:00Z",
+    "symbol": "TEST/USD",
+    "final_action": "hold",
+    "bet_size": 0.0,
+    "pred_prob_win": 0.45,
+    "regime_label": "bear"
+  }
+]

@@ -1,0 +1,29 @@
+RESEARCH WALKFORWARD BACKTEST (1d)
+
+Universe Mode          : broad_liquid_etfs
+Primary Strategy        : alpha_raw_long_only
+Universe               : SPY, EEM, EFA, TLT
+
+PHASE 1: IN-SAMPLE (2017-01-03 to 2022-12-30)
+============================================================
+Starting Equity         : $1,000,000.00
+Ending Equity           : $943,160.31
+Total Return            : -5.68%
+Annualized Return       : -0.97%
+Annualized Volatility   : +2.73%
+Sharpe Ratio            : -0.34
+Max Drawdown            : -9.23%
+
+PHASE 2: OUT-OF-SAMPLE (2023-01-03 to 2023-12-29)
+============================================================
+Starting Equity         : $943,160.31
+Ending Equity           : $1,024,267.61
+Total Return            : +8.60%
+Annualized Return       : +8.73%
+Annualized Volatility   : +10.03%
+Sharpe Ratio            : 0.88
+Max Drawdown            : -12.55%
+
+[VERDICT]
+Status                 : REJECTED
+OOS performance does not satisfy the minimum robustness gate under strict execution frictions.

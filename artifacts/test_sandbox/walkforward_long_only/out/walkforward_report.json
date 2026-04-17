@@ -1,0 +1,89 @@
+{
+  "product_name": "HydraPredict 5",
+  "run_mode": "walkforward_local_source",
+  "timeframe": "60m",
+  "universe_mode": "liquid_etfs",
+  "strategy_mode": "alpha_raw_long_only",
+  "strategy_label": "HydraPredict 5 Core Engine",
+  "train_period": {
+    "start": "2025-02-20",
+    "end": "2025-04-10"
+  },
+  "test_period": {
+    "start": "2025-04-11",
+    "end": "2025-05-05"
+  },
+  "universe": [
+    "AAA",
+    "BBB",
+    "SPY"
+  ],
+  "benchmark_symbol": "SPY",
+  "universe_search": {
+    "objective": "direct_symbol_resolution"
+  },
+  "is_metrics": {
+    "starting_equity": 1000000.0,
+    "ending_equity": 250694.50652650182,
+    "total_return": -0.7493054934734982,
+    "annualized_return": -0.9999595338269652,
+    "annualized_volatility": 0.7472441198469946,
+    "sharpe": -13.154446201978814,
+    "sortino": -18.58237291864873,
+    "max_drawdown": -0.9095885552509657,
+    "profit_factor": 0.6221675759878631,
+    "trade_count": 3.0,
+    "avg_exposure": 0.355,
+    "avg_turnover": 0.0008333333333333334
+  },
+  "oos_metrics": {
+    "starting_equity": 250694.50652650182,
+    "ending_equity": 283775.5245724348,
+    "total_return": 0.13195749082932484,
+    "annualized_return": 5.134384201377472,
+    "annualized_volatility": 1.2330482495552455,
+    "sharpe": 2.0865378727195516,
+    "sortino": 3.72175145189863,
+    "max_drawdown": -0.9506073660955278,
+    "profit_factor": 1.055056468457248,
+    "trade_count": 3.0,
+    "avg_exposure": 0.9405555555555556,
+    "avg_turnover": 0.0016666666666666668
+  },
+  "benchmark_metrics": {
+    "in_sample": {
+      "starting_equity": 1000000.0,
+      "ending_equity": 67339.91630071845,
+      "total_return": -0.9326600836992816,
+      "annualized_return": -0.9999999972873591,
+      "annualized_volatility": 1.736815220559828,
+      "sharpe": -10.476653378295891,
+      "max_drawdown": -0.9817205038914033,
+      "profit_factor": 0.7740409107801554
+    },
+    "out_of_sample": {
+      "starting_equity": 250694.50652650182,
+      "ending_equity": 155410.31149981474,
+      "total_return": -0.38008090542907147,
+      "annualized_return": -0.9990859931215693,
+      "annualized_volatility": 1.6783247012587832,
+      "sharpe": -3.33062797073095,
+      "max_drawdown": -0.9817128953927503,
+      "profit_factor": 0.9208827213513111
+    }
+  },
+  "verdict": {
+    "status": "REJECTED",
+    "summary": "OOS performance does not satisfy the minimum robustness gate under strict execution frictions."
+  },
+  "module1": {
+    "bars": 5400,
+    "stationary": 5400,
+    "events": 1141,
+    "labels": 1141
+  },
+  "oos_trade_count": 617,
+  "report_txt": "artifacts\\test_sandbox\\walkforward_long_only\\out\\walkforward_report.txt",
+  "report_pdf": "artifacts\\test_sandbox\\walkforward_long_only\\out\\walkforward_report.pdf",
+  "curves_png": "artifacts\\test_sandbox\\walkforward_long_only\\out\\walkforward_equity_curves.png"
+}

@@ -1,0 +1,36 @@
+--- HydraPredict 5 walkforward_report.json
++++ HydraPredict 5 hosted_site_bundle
+@@ report summary @@
++ product_name: HydraPredict 5
++ engine_label: HydraPredict 5 Core Engine
++ timeframe: 1d
++ universe_mode: liquid_etfs
++ benchmark_symbol: SPY
++ universe: SPY, GLD, IEF, XLV, XLK
++ train_period: 2017-01-03 -> 2022-12-30
++ test_period: 2023-01-03 -> 2023-12-29
+@@ phase 1 @@
++ IS ending_equity: 930252.8890352778
++ IS return: -0.06974711096472219
++ IS annual_return: -0.012001989447220418
++ IS volatility: 0.01696558061148069
++ IS sharpe: -0.7032152661278007
++ IS max_drawdown: -0.07263081505659796
+@@ phase 2 @@
++ OOS ending_equity: 1082459.4638210253
++ OOS return: 0.16361849189589073
++ OOS annual_return: 0.16619279101371798
++ OOS volatility: 0.07930080738072418
++ OOS sharpe: 1.9787546123015733
++ OOS max_drawdown: -0.07107064065285529
++ OOS profit_factor: 1.4270794036802916
+@@ benchmark @@
++ benchmark_oos_sharpe: 1.692397615091731
++ benchmark_oos_max_drawdown: -0.09903706274918767
+@@ verdict @@
++ status: CANDIDATE
++ summary: OOS performance clears the minimum deployment gate but does not yet meet the stretch target.
+@@ graphs @@
++ curves_png: assets/walkforward_equity_curves.png
++ report_pdf: assets/walkforward_report.pdf
++ report_txt: assets/walkforward_report.txt

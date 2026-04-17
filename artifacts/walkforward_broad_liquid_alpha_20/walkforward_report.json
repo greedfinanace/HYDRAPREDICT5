@@ -1,0 +1,181 @@
+{
+  "run_mode": "walkforward_local_source",
+  "timeframe": "1d",
+  "universe_mode": "broad_liquid_etfs",
+  "strategy_mode": "alpha_raw_long_only",
+  "train_period": {
+    "start": "2017-01-03",
+    "end": "2022-12-30"
+  },
+  "test_period": {
+    "start": "2023-01-03",
+    "end": "2023-12-29"
+  },
+  "universe": [
+    "SPY",
+    "XLV",
+    "GLD",
+    "AGG"
+  ],
+  "benchmark_symbol": "SPY",
+  "universe_search": {
+    "objective": "training_window_backtest",
+    "strategy_mode": "alpha_raw_long_only",
+    "candidate_pool": [
+      "SPY",
+      "QQQ",
+      "IWM",
+      "EEM",
+      "HYG",
+      "XLF",
+      "EFA",
+      "TLT",
+      "LQD",
+      "XLE",
+      "GLD",
+      "DIA",
+      "XLK",
+      "XLV",
+      "XLI",
+      "XLU",
+      "XLP",
+      "SMH",
+      "XLY",
+      "AGG"
+    ],
+    "candidate_pool_size": 20,
+    "target_size_max": 6,
+    "evaluation_count": 3,
+    "top_evaluations": [
+      {
+        "target_size": 4,
+        "symbols": [
+          "SPY",
+          "XLV",
+          "GLD",
+          "AGG"
+        ],
+        "score": -0.2092016599930616,
+        "proxy_score": 0.16090962550666071,
+        "proxy_train_sharpe": 0.7179835462211123,
+        "proxy_train_max_drawdown": -0.1757159779889398,
+        "validation_median_sharpe": -0.04701578085447773,
+        "validation_non_positive_ratio": 1.0,
+        "objective_used": "full_train_backtest"
+      },
+      {
+        "target_size": 4,
+        "symbols": [
+          "SPY",
+          "GLD",
+          "AGG",
+          "XLV"
+        ],
+        "score": -0.2092016599930616,
+        "proxy_score": 0.16090962550666071,
+        "proxy_train_sharpe": 0.7179835462211123,
+        "proxy_train_max_drawdown": -0.1757159779889398,
+        "validation_median_sharpe": -0.04701578085447773,
+        "validation_non_positive_ratio": 1.0,
+        "objective_used": "full_train_backtest"
+      },
+      {
+        "target_size": 4,
+        "symbols": [
+          "SPY",
+          "GLD",
+          "AGG",
+          "XLV"
+        ],
+        "score": -0.2092016599930616,
+        "proxy_score": 0.16090962550666071,
+        "proxy_train_sharpe": 0.7179835462211123,
+        "proxy_train_max_drawdown": -0.1757159779889398,
+        "validation_median_sharpe": -0.04701578085447773,
+        "validation_non_positive_ratio": 1.0,
+        "objective_used": "full_train_backtest"
+      }
+    ],
+    "selected_score": -0.2092016599930616,
+    "selected_train_metrics": {
+      "objective_used": "full_train_backtest",
+      "fallback_reason": "Not enough observations to fit the HMM regime detector.",
+      "median_validation_sharpe": -0.04701578085447773,
+      "validation_non_positive_ratio": 1.0,
+      "validation_sharpes": [
+        -0.04701578085447773
+      ],
+      "validation_mdds": [
+        -0.10810184437053494
+      ],
+      "validation_turnovers": [
+        0.0006622516556291391
+      ]
+    },
+    "selected_target_size": 4
+  },
+  "is_metrics": {
+    "starting_equity": 1000000.0,
+    "ending_equity": 996907.2026337411,
+    "total_return": -0.0030927973662588926,
+    "annualized_return": -0.0005171934743408713,
+    "annualized_volatility": 0.014572606235544157,
+    "sharpe": -0.02825967395776113,
+    "sortino": -0.047369637035952046,
+    "max_drawdown": -0.038028080307643375,
+    "profit_factor": 0.9622399551105165,
+    "trade_count": 4.0,
+    "avg_exposure": 0.015397350993377483,
+    "avg_turnover": 0.0006622516556291391
+  },
+  "oos_metrics": {
+    "starting_equity": 996907.2026337411,
+    "ending_equity": 1102280.613725381,
+    "total_return": 0.10570032076531555,
+    "annualized_return": 0.10732171033957782,
+    "annualized_volatility": 0.06877166646407228,
+    "sharpe": 1.5168329633699138,
+    "sortino": 2.8786285339199567,
+    "max_drawdown": -0.06545719919761384,
+    "profit_factor": 1.314617575632413,
+    "trade_count": 4.0,
+    "avg_exposure": 0.849,
+    "avg_turnover": 0.004
+  },
+  "benchmark_metrics": {
+    "in_sample": {
+      "starting_equity": 1000000.0,
+      "ending_equity": 1691432.749753346,
+      "total_return": 0.6914327497533459,
+      "annualized_return": 0.0917437956727909,
+      "annualized_volatility": 0.18601854952356606,
+      "sharpe": 0.5655065962601793,
+      "max_drawdown": -0.32446195367244046,
+      "profit_factor": 1.1133672478185255
+    },
+    "out_of_sample": {
+      "starting_equity": 996907.2026337411,
+      "ending_equity": 1235830.8642242088,
+      "total_return": 0.23966489655130618,
+      "annualized_return": 0.2435549806623829,
+      "annualized_volatility": 0.13414270017732258,
+      "sharpe": 1.692397615091731,
+      "max_drawdown": -0.09903706274918767,
+      "profit_factor": 1.312209396781702
+    }
+  },
+  "verdict": {
+    "status": "CANDIDATE",
+    "summary": "OOS performance clears the minimum research gate but does not yet meet the stretch target."
+  },
+  "module1": {
+    "bars": 7040,
+    "stationary": 7040,
+    "events": 279,
+    "labels": 279
+  },
+  "oos_trade_count": 223,
+  "report_txt": "artifacts\\walkforward_broad_liquid_alpha_20\\walkforward_report.txt",
+  "report_pdf": "artifacts\\walkforward_broad_liquid_alpha_20\\walkforward_report.pdf",
+  "curves_png": "artifacts\\walkforward_broad_liquid_alpha_20\\walkforward_equity_curves.png"
+}

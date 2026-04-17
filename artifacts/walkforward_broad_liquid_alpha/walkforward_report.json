@@ -1,0 +1,476 @@
+{
+  "run_mode": "walkforward_local_source",
+  "timeframe": "1d",
+  "universe_mode": "broad_liquid_etfs",
+  "strategy_mode": "alpha_raw_long_only",
+  "train_period": {
+    "start": "2017-01-03",
+    "end": "2022-12-30"
+  },
+  "test_period": {
+    "start": "2023-01-03",
+    "end": "2023-12-29"
+  },
+  "universe": [
+    "SPY",
+    "EEM",
+    "EFA",
+    "TLT"
+  ],
+  "benchmark_symbol": "SPY",
+  "universe_search": {
+    "objective": "training_window_backtest",
+    "strategy_mode": "alpha_raw_long_only",
+    "candidate_pool": [
+      "SPY",
+      "QQQ",
+      "IWM",
+      "EEM",
+      "HYG",
+      "XLF",
+      "EFA",
+      "TLT",
+      "LQD",
+      "XLE"
+    ],
+    "candidate_pool_size": 10,
+    "target_size_max": 6,
+    "evaluation_count": 336,
+    "top_evaluations": [
+      {
+        "target_size": 4,
+        "symbols": [
+          "SPY",
+          "EEM",
+          "EFA",
+          "TLT"
+        ],
+        "score": -0.32620900463118846,
+        "validation_median_sharpe": -0.21774900568418543,
+        "validation_non_positive_ratio": 1.0,
+        "objective_used": "full_train_backtest"
+      },
+      {
+        "target_size": 5,
+        "symbols": [
+          "SPY",
+          "EEM",
+          "HYG",
+          "EFA",
+          "TLT"
+        ],
+        "score": -0.33168865454173035,
+        "validation_median_sharpe": -0.24457483947208125,
+        "validation_non_positive_ratio": 1.0,
+        "objective_used": "full_train_backtest"
+      },
+      {
+        "target_size": 6,
+        "symbols": [
+          "SPY",
+          "EEM",
+          "HYG",
+          "XLF",
+          "EFA",
+          "TLT"
+        ],
+        "score": -0.3376338855003405,
+        "validation_median_sharpe": -0.19340847609619544,
+        "validation_non_positive_ratio": 1.0,
+        "objective_used": "full_train_backtest"
+      },
+      {
+        "target_size": 4,
+        "symbols": [
+          "SPY",
+          "EEM",
+          "HYG",
+          "TLT"
+        ],
+        "score": -0.34211020839389067,
+        "validation_median_sharpe": -0.23365020944688764,
+        "validation_non_positive_ratio": 1.0,
+        "objective_used": "full_train_backtest"
+      },
+      {
+        "target_size": 4,
+        "symbols": [
+          "SPY",
+          "HYG",
+          "XLF",
+          "LQD"
+        ],
+        "score": -0.3463379561530419,
+        "validation_median_sharpe": 0.0,
+        "validation_non_positive_ratio": 0.6666666666666666,
+        "objective_used": "nested_validation"
+      },
+      {
+        "target_size": 5,
+        "symbols": [
+          "SPY",
+          "EEM",
+          "HYG",
+          "XLF",
+          "LQD"
+        ],
+        "score": -0.3463379561530419,
+        "validation_median_sharpe": 0.0,
+        "validation_non_positive_ratio": 0.6666666666666666,
+        "objective_used": "nested_validation"
+      },
+      {
+        "target_size": 6,
+        "symbols": [
+          "SPY",
+          "EEM",
+          "XLF",
+          "EFA",
+          "TLT",
+          "LQD"
+        ],
+        "score": -0.348650792396428,
+        "validation_median_sharpe": -0.2044253829922829,
+        "validation_non_positive_ratio": 1.0,
+        "objective_used": "full_train_backtest"
+      },
+      {
+        "target_size": 5,
+        "symbols": [
+          "SPY",
+          "EEM",
+          "XLF",
+          "EFA",
+          "TLT"
+        ],
+        "score": -0.34882868185829546,
+        "validation_median_sharpe": -0.1767345771966675,
+        "validation_non_positive_ratio": 1.0,
+        "objective_used": "full_train_backtest"
+      },
+      {
+        "target_size": 5,
+        "symbols": [
+          "SPY",
+          "EEM",
+          "EFA",
+          "TLT",
+          "XLE"
+        ],
+        "score": -0.35029118068590437,
+        "validation_median_sharpe": -0.26317736561625527,
+        "validation_non_positive_ratio": 1.0,
+        "objective_used": "full_train_backtest"
+      },
+      {
+        "target_size": 5,
+        "symbols": [
+          "SPY",
+          "EEM",
+          "EFA",
+          "TLT",
+          "LQD"
+        ],
+        "score": -0.352029048632965,
+        "validation_median_sharpe": -0.2649152335633159,
+        "validation_non_positive_ratio": 1.0,
+        "objective_used": "full_train_backtest"
+      },
+      {
+        "target_size": 6,
+        "symbols": [
+          "SPY",
+          "EEM",
+          "XLF",
+          "EFA",
+          "TLT",
+          "XLE"
+        ],
+        "score": -0.3527892311219741,
+        "validation_median_sharpe": -0.208563821717829,
+        "validation_non_positive_ratio": 1.0,
+        "objective_used": "full_train_backtest"
+      },
+      {
+        "target_size": 4,
+        "symbols": [
+          "SPY",
+          "HYG",
+          "EFA",
+          "TLT"
+        ],
+        "score": -0.3530348457270919,
+        "validation_median_sharpe": -0.2445748394720812,
+        "validation_non_positive_ratio": 1.0,
+        "objective_used": "full_train_backtest"
+      },
+      {
+        "target_size": 6,
+        "symbols": [
+          "SPY",
+          "EEM",
+          "HYG",
+          "XLF",
+          "TLT",
+          "LQD"
+        ],
+        "score": -0.35668849194135044,
+        "validation_median_sharpe": -0.21246308253720536,
+        "validation_non_positive_ratio": 1.0,
+        "objective_used": "full_train_backtest"
+      },
+      {
+        "target_size": 5,
+        "symbols": [
+          "SPY",
+          "EEM",
+          "HYG",
+          "XLF",
+          "TLT"
+        ],
+        "score": -0.3568012752956619,
+        "validation_median_sharpe": -0.1847071706340339,
+        "validation_non_positive_ratio": 1.0,
+        "objective_used": "full_train_backtest"
+      },
+      {
+        "target_size": 4,
+        "symbols": [
+          "SPY",
+          "EEM",
+          "HYG",
+          "EFA"
+        ],
+        "score": -0.35970720125216515,
+        "validation_median_sharpe": -0.2512472023051621,
+        "validation_non_positive_ratio": 1.0,
+        "objective_used": "full_train_backtest"
+      },
+      {
+        "target_size": 6,
+        "symbols": [
+          "SPY",
+          "EEM",
+          "HYG",
+          "XLF",
+          "TLT",
+          "XLE"
+        ],
+        "score": -0.3605669654330115,
+        "validation_median_sharpe": -0.21634155602886643,
+        "validation_non_positive_ratio": 1.0,
+        "objective_used": "full_train_backtest"
+      },
+      {
+        "target_size": 6,
+        "symbols": [
+          "SPY",
+          "EEM",
+          "HYG",
+          "EFA",
+          "TLT",
+          "LQD"
+        ],
+        "score": -0.36132327314601353,
+        "validation_median_sharpe": -0.2874683562462158,
+        "validation_non_positive_ratio": 1.0,
+        "objective_used": "full_train_backtest"
+      },
+      {
+        "target_size": 6,
+        "symbols": [
+          "SPY",
+          "EEM",
+          "HYG",
+          "EFA",
+          "TLT",
+          "XLE"
+        ],
+        "score": -0.3618614063105405,
+        "validation_median_sharpe": -0.2816125084015364,
+        "validation_non_positive_ratio": 1.0,
+        "objective_used": "full_train_backtest"
+      },
+      {
+        "target_size": 4,
+        "symbols": [
+          "SPY",
+          "EEM",
+          "TLT",
+          "LQD"
+        ],
+        "score": -0.36270196872260607,
+        "validation_median_sharpe": -0.25424196977560304,
+        "validation_non_positive_ratio": 1.0,
+        "objective_used": "full_train_backtest"
+      },
+      {
+        "target_size": 6,
+        "symbols": [
+          "SPY",
+          "HYG",
+          "XLF",
+          "EFA",
+          "TLT",
+          "LQD"
+        ],
+        "score": -0.36422668493876037,
+        "validation_median_sharpe": -0.22000127114942358,
+        "validation_non_positive_ratio": 1.0,
+        "objective_used": "full_train_backtest"
+      },
+      {
+        "target_size": 4,
+        "symbols": [
+          "SPY",
+          "EEM",
+          "TLT",
+          "XLE"
+        ],
+        "score": -0.3646819763911566,
+        "validation_median_sharpe": -0.2562219774441536,
+        "validation_non_positive_ratio": 1.0,
+        "objective_used": "full_train_backtest"
+      },
+      {
+        "target_size": 5,
+        "symbols": [
+          "SPY",
+          "HYG",
+          "XLF",
+          "EFA",
+          "TLT"
+        ],
+        "score": -0.36550258623913173,
+        "validation_median_sharpe": -0.19340847609619558,
+        "validation_non_positive_ratio": 1.0,
+        "objective_used": "full_train_backtest"
+      },
+      {
+        "target_size": 6,
+        "symbols": [
+          "SPY",
+          "EEM",
+          "HYG",
+          "XLF",
+          "EFA",
+          "XLE"
+        ],
+        "score": -0.3666136472882461,
+        "validation_median_sharpe": -0.22238823788410098,
+        "validation_non_positive_ratio": 1.0,
+        "objective_used": "full_train_backtest"
+      },
+      {
+        "target_size": 6,
+        "symbols": [
+          "SPY",
+          "HYG",
+          "XLF",
+          "EFA",
+          "TLT",
+          "XLE"
+        ],
+        "score": -0.3669266059128705,
+        "validation_median_sharpe": -0.22270119212353373,
+        "validation_non_positive_ratio": 1.0,
+        "objective_used": "full_train_backtest"
+      },
+      {
+        "target_size": 5,
+        "symbols": [
+          "SPY",
+          "EEM",
+          "XLF",
+          "TLT",
+          "LQD"
+        ],
+        "score": -0.3678535816014144,
+        "validation_median_sharpe": -0.19575947693978638,
+        "validation_non_positive_ratio": 1.0,
+        "objective_used": "full_train_backtest"
+      }
+    ],
+    "selected_score": -0.32620900463118846,
+    "selected_train_metrics": {
+      "objective_used": "full_train_backtest",
+      "fallback_reason": "Not enough observations to fit the HMM regime detector.",
+      "median_validation_sharpe": -0.21774900568418543,
+      "validation_non_positive_ratio": 1.0,
+      "validation_sharpes": [
+        -0.21774900568418543
+      ],
+      "validation_mdds": [
+        -0.07228459578148616
+      ],
+      "validation_turnovers": [
+        0.0006621054954756124
+      ]
+    },
+    "selected_target_size": 4
+  },
+  "is_metrics": {
+    "starting_equity": 1000000.0,
+    "ending_equity": 943160.3084239402,
+    "total_return": -0.056839691576059836,
+    "annualized_return": -0.009725634116747539,
+    "annualized_volatility": 0.027255250537004047,
+    "sharpe": -0.3449563991057691,
+    "sortino": -0.4901061297671513,
+    "max_drawdown": -0.09227677368106824,
+    "profit_factor": 0.8784007047781848,
+    "trade_count": 3.0,
+    "avg_exposure": 0.08165967777532554,
+    "avg_turnover": 0.0006621054954756124
+  },
+  "oos_metrics": {
+    "starting_equity": 943160.3084239402,
+    "ending_equity": 1024267.6131317229,
+    "total_return": 0.08599524808599757,
+    "annualized_return": 0.0873025724154044,
+    "annualized_volatility": 0.10030310482683755,
+    "sharpe": 0.8844581600216138,
+    "sortino": 1.571910633042564,
+    "max_drawdown": -0.1255357637886242,
+    "profit_factor": 1.1712608915126368,
+    "trade_count": 3.0,
+    "avg_exposure": 0.8506666666666667,
+    "avg_turnover": 0.004
+  },
+  "benchmark_metrics": {
+    "in_sample": {
+      "starting_equity": 1000000.0,
+      "ending_equity": 1691432.749753346,
+      "total_return": 0.6914327497533459,
+      "annualized_return": 0.0917437956727909,
+      "annualized_volatility": 0.18601854952356606,
+      "sharpe": 0.5655065962601793,
+      "max_drawdown": -0.32446195367244046,
+      "profit_factor": 1.1133672478185255
+    },
+    "out_of_sample": {
+      "starting_equity": 943160.3084239402,
+      "ending_equity": 1169202.7261736619,
+      "total_return": 0.23966489655130618,
+      "annualized_return": 0.2435549806623829,
+      "annualized_volatility": 0.13414270017732258,
+      "sharpe": 1.692397615091731,
+      "max_drawdown": -0.09903706274918767,
+      "profit_factor": 1.312209396781702
+    }
+  },
+  "verdict": {
+    "status": "REJECTED",
+    "summary": "OOS performance does not satisfy the minimum robustness gate under strict execution frictions."
+  },
+  "module1": {
+    "bars": 5281,
+    "stationary": 5281,
+    "events": 286,
+    "labels": 286
+  },
+  "oos_trade_count": 179,
+  "report_txt": "artifacts\\walkforward_broad_liquid_alpha\\walkforward_report.txt",
+  "report_pdf": "artifacts\\walkforward_broad_liquid_alpha\\walkforward_report.pdf",
+  "curves_png": "artifacts\\walkforward_broad_liquid_alpha\\walkforward_equity_curves.png"
+}

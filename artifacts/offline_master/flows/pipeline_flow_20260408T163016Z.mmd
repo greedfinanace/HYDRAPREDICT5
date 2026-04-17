@@ -1,0 +1,16 @@
+flowchart TD
+    run["run_timestamp\n2026-04-08T16:30:16.481465+00:00"]
+    s0["module0.fetch_data\nstatus: skipped_local_source"]
+    s1["module07.clean_data\nstatus: skipped_local_source"]
+    s2["module1.build_volume_bars\nstatus: skipped_no_new_data"]
+    s3["module2.generate_features\nstatus: skipped_no_new_data"]
+    s4["module65.detect_regimes\nstatus: skipped_no_new_data"]
+    s5["module34.train_models\nstatus: skipped_no_new_data"]
+    s6["module5.run_backtest\nstatus: skipped_no_new_data"]
+    run --> s0
+    s0 --> s1
+    s1 --> s2
+    s2 --> s3
+    s3 --> s4
+    s4 --> s5
+    s5 --> s6

@@ -1,0 +1,19 @@
+{
+  "last_fetch_time": "2026-04-08T16:30:37.463349+00:00",
+  "last_train_accuracy": 0.4423076923076923,
+  "last_meta_sharpe": 0.0,
+  "last_rows_downloaded": 0,
+  "data_signature": {
+    "hash": "a6589461f4424e3d2ebd01bebaa1edc02c688d217c0054a6a6e4a139d248ada0",
+    "payload": {
+      "provider": "yfinance",
+      "symbols": [
+        "AADR",
+        "ACWI"
+      ],
+      "row_count": 0,
+      "latest_timestamp": null,
+      "written_files": []
+    }
+  }
+}

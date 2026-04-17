@@ -1,0 +1,3 @@
+# Friday at 4:05 PM America/New_York (run in a host configured to ET or adjust TZ inline)
+5 16 * * 5 cd /opt/quant-stack && /opt/quant-stack/.venv/bin/python run_full_stack.py --provider alpaca --symbols SPY QQQ IWM --lookback-days 30 >> /opt/quant-stack/logs/cron_quant.log 2>&1
+

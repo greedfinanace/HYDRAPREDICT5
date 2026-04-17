@@ -1,0 +1,32 @@
+{
+  "timestamp": "20260408T162611Z",
+  "provider": "yfinance",
+  "symbols": [
+    "AADR",
+    "ACWI"
+  ],
+  "lookback_days": 7,
+  "raw_rows_downloaded": 0,
+  "rows_downloaded": 0,
+  "integrity_raw": {
+    "ok": true,
+    "reason": "local_source_mode",
+    "gap_count": 0,
+    "zero_volume_bars": 0,
+    "raw_zero_volume_bars": 0,
+    "imputed_zero_volume_bars": 0
+  },
+  "integrity_cleaned": {
+    "ok": true,
+    "reason": "local_source_mode",
+    "gap_count": 0,
+    "zero_volume_bars": 0,
+    "raw_zero_volume_bars": 0,
+    "imputed_zero_volume_bars": 0
+  },
+  "meta_sharpe": 0.0,
+  "meta_max_drawdown": 0.0,
+  "meta_profit_factor": 0.0,
+  "artifacts_root": "artifacts\\offline_full_stack",
+  "report_pdf": "artifacts\\offline_full_stack\\reports\\backtest_report_20260408T162611Z.pdf"
+}

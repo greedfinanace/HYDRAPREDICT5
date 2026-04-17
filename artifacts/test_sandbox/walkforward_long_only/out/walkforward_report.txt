@@ -1,0 +1,29 @@
+HydraPredict 5 WALKFORWARD BACKTEST (60m)
+
+Universe Mode          : liquid_etfs
+Primary Engine         : HydraPredict 5 Core Engine
+Universe               : AAA, BBB, SPY
+
+PHASE 1: IN-SAMPLE (2025-02-20 to 2025-04-10)
+============================================================
+Starting Equity         : $1,000,000.00
+Ending Equity           : $250,694.51
+Total Return            : -74.93%
+Annualized Return       : -100.00%
+Annualized Volatility   : +74.72%
+Sharpe Ratio            : -13.15
+Max Drawdown            : -90.96%
+
+PHASE 2: OUT-OF-SAMPLE (2025-04-11 to 2025-05-05)
+============================================================
+Starting Equity         : $250,694.51
+Ending Equity           : $283,775.52
+Total Return            : +13.20%
+Annualized Return       : +513.44%
+Annualized Volatility   : +123.30%
+Sharpe Ratio            : 2.09
+Max Drawdown            : -95.06%
+
+[VERDICT]
+Status                 : REJECTED
+OOS performance does not satisfy the minimum robustness gate under strict execution frictions.

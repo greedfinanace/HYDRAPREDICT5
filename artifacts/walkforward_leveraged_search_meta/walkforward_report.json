@@ -1,0 +1,172 @@
+{
+  "run_mode": "walkforward_local_source",
+  "timeframe": "1d",
+  "universe_mode": "leveraged_sector_etfs",
+  "strategy_mode": "meta",
+  "train_period": {
+    "start": "2017-01-03",
+    "end": "2022-12-30"
+  },
+  "test_period": {
+    "start": "2023-01-03",
+    "end": "2023-12-29"
+  },
+  "universe": [
+    "SPY",
+    "SMH",
+    "SOXX",
+    "XLF",
+    "XBI"
+  ],
+  "benchmark_symbol": "SPY",
+  "universe_search": {
+    "objective": "training_window_backtest",
+    "strategy_mode": "meta",
+    "candidate_sizes": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evaluations": [
+      {
+        "target_size": 4,
+        "symbols": [
+          "SPY",
+          "SMH",
+          "SOXX",
+          "XLF"
+        ],
+        "score": -0.8571634312801251,
+        "train_sharpe": -0.7891257376696322,
+        "train_sortino": -1.119645025356732,
+        "train_max_drawdown": -0.04502898462827276,
+        "train_profit_factor": 0.5142299184119283,
+        "train_annualized_return": -0.005995873175065558,
+        "train_annualized_volatility": 0.007584499058873502,
+        "avg_turnover": 0.009884333361674458,
+        "avg_exposure": 0.005418016170922145
+      },
+      {
+        "target_size": 5,
+        "symbols": [
+          "SPY",
+          "SMH",
+          "SOXX",
+          "XLF",
+          "XBI"
+        ],
+        "score": -0.6924369726544818,
+        "train_sharpe": -0.6400210958211522,
+        "train_sortino": -0.8610512749527215,
+        "train_max_drawdown": -0.034597960713972364,
+        "train_profit_factor": 0.6503088482014542,
+        "train_annualized_return": -0.004895702930000745,
+        "train_annualized_volatility": 0.007622612989819446,
+        "avg_turnover": 0.010378715247420046,
+        "avg_exposure": 0.005564991535803497
+      },
+      {
+        "target_size": 6,
+        "symbols": [
+          "SPY",
+          "SMH",
+          "SOXX",
+          "XLF",
+          "XBI",
+          "XLE"
+        ],
+        "score": -0.9981173480555708,
+        "train_sharpe": -0.9305950486098463,
+        "train_sortino": -1.30675239423701,
+        "train_max_drawdown": -0.044674918402464736,
+        "train_profit_factor": 0.5534639308003266,
+        "train_annualized_return": -0.00671782940560206,
+        "train_annualized_volatility": 0.007215169722154002,
+        "avg_turnover": 0.010198436840546275,
+        "avg_exposure": 0.005738702463758997
+      }
+    ],
+    "selected_score": -0.6924369726544818,
+    "selected_train_metrics": {
+      "starting_equity": 1000000.0,
+      "ending_equity": 971041.6748967945,
+      "total_return": -0.028958325103205507,
+      "annualized_return": -0.004895702930000745,
+      "annualized_volatility": 0.007622612989819446,
+      "sharpe": -0.6400210958211522,
+      "sortino": -0.8610512749527215,
+      "max_drawdown": -0.034597960713972364,
+      "profit_factor": 0.6503088482014542,
+      "trade_count": 248.0,
+      "avg_exposure": 0.005564991535803497,
+      "avg_turnover": 0.010378715247420046
+    },
+    "selected_target_size": 5
+  },
+  "is_metrics": {
+    "starting_equity": 1000000.0,
+    "ending_equity": 954738.5866690609,
+    "total_return": -0.04526141333093914,
+    "annualized_return": -0.007705659858293745,
+    "annualized_volatility": 0.009168840713400597,
+    "sharpe": -0.8390509485893823,
+    "sortino": -0.9267502836059035,
+    "max_drawdown": -0.051829996655980204,
+    "profit_factor": 0.37707633871018037,
+    "trade_count": 130.0,
+    "avg_exposure": 0.0023298666614590554,
+    "avg_turnover": 0.004337498461681569
+  },
+  "oos_metrics": {
+    "starting_equity": 954738.5866690609,
+    "ending_equity": 922827.2596604881,
+    "total_return": -0.03342415133749499,
+    "annualized_return": -0.03390322974631488,
+    "annualized_volatility": 0.010062685446678921,
+    "sharpe": -3.4223881809251795,
+    "sortino": -3.882377603024235,
+    "max_drawdown": -0.03487520537716915,
+    "profit_factor": 0.30661869494781413,
+    "trade_count": 172.0,
+    "avg_exposure": 0.01938330254541298,
+    "avg_turnover": 0.03494991433522108
+  },
+  "benchmark_metrics": {
+    "in_sample": {
+      "starting_equity": 1000000.0,
+      "ending_equity": 1691432.749753346,
+      "total_return": 0.6914327497533459,
+      "annualized_return": 0.0917437956727909,
+      "annualized_volatility": 0.18601854952356606,
+      "sharpe": 0.5655065962601793,
+      "max_drawdown": -0.32446195367244046,
+      "profit_factor": 1.1133672478185255
+    },
+    "out_of_sample": {
+      "starting_equity": 954738.5866690609,
+      "ending_equity": 1183555.9112766415,
+      "total_return": 0.23966489655130618,
+      "annualized_return": 0.2435549806623829,
+      "annualized_volatility": 0.13414270017732258,
+      "sharpe": 1.692397615091731,
+      "max_drawdown": -0.09903706274918767,
+      "profit_factor": 1.312209396781702
+    }
+  },
+  "verdict": {
+    "status": "REJECTED",
+    "summary": "OOS performance does not satisfy the minimum robustness gate under strict execution frictions."
+  },
+  "module1": {
+    "bars": 8800,
+    "stationary": 8800,
+    "events": 613,
+    "labels": 613
+  },
+  "oos_trade_count": 121,
+  "report_txt": "artifacts\\walkforward_leveraged_search_meta\\walkforward_report.txt",
+  "report_pdf": "artifacts\\walkforward_leveraged_search_meta\\walkforward_report.pdf",
+  "curves_png": "artifacts\\walkforward_leveraged_search_meta\\walkforward_equity_curves.png"
+}

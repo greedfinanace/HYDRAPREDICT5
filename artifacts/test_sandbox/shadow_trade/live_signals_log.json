@@ -1,0 +1,12 @@
+[
+  {
+    "timestamp": "2026-04-03T00:00:00Z",
+    "symbol": "BTC/USDT",
+    "final_action": "buy",
+    "bet_size": 0.8,
+    "pred_prob_win": 0.9,
+    "expected_return": 0.001,
+    "realized_return": -0.003,
+    "mid_price": 100.0
+  }
+]

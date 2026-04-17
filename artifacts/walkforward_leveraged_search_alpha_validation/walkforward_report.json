@@ -1,0 +1,619 @@
+{
+  "run_mode": "walkforward_local_source",
+  "timeframe": "1d",
+  "universe_mode": "leveraged_sector_etfs",
+  "strategy_mode": "alpha_raw_long_only",
+  "train_period": {
+    "start": "2017-01-03",
+    "end": "2022-12-30"
+  },
+  "test_period": {
+    "start": "2023-01-03",
+    "end": "2023-12-29"
+  },
+  "universe": [
+    "SPY",
+    "SOXX",
+    "XBI",
+    "XLE",
+    "XLF"
+  ],
+  "benchmark_symbol": "SPY",
+  "universe_search": {
+    "objective": "training_window_backtest",
+    "strategy_mode": "alpha_raw_long_only",
+    "candidate_sizes": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evaluations": [
+      {
+        "target_size": 4,
+        "symbols": [
+          "SPY",
+          "SMH",
+          "SOXX",
+          "XLF"
+        ],
+        "score": -0.8030571140187517,
+        "validation_median_sharpe": -0.08180736510320581,
+        "validation_non_positive_ratio": 1.0,
+        "validation_sharpes": [
+          0.0,
+          -0.08180736510320581,
+          -1.905764957273304
+        ],
+        "validation_mdds": [
+          0.0,
+          -0.004058817091931677,
+          -0.009315932150873119
+        ],
+        "validation_turnovers": [
+          0.0,
+          0.013151971704270854,
+          0.01828532463189189
+        ]
+      },
+      {
+        "target_size": 5,
+        "symbols": [
+          "SPY",
+          "SMH",
+          "SOXX",
+          "XLF",
+          "XBI"
+        ],
+        "score": -0.5348434883408024,
+        "validation_median_sharpe": 0.0,
+        "validation_non_positive_ratio": 0.6666666666666666,
+        "validation_sharpes": [
+          0.0,
+          -1.6276985570392697,
+          0.14659483158435396
+        ],
+        "validation_mdds": [
+          0.0,
+          -0.0033820513110451866,
+          -0.008147662769839803
+        ],
+        "validation_turnovers": [
+          0.0,
+          0.004882921461046573,
+          0.028577794366256987
+        ]
+      },
+      {
+        "target_size": 6,
+        "symbols": [
+          "SPY",
+          "SMH",
+          "SOXX",
+          "XLF",
+          "XBI",
+          "XLE"
+        ],
+        "score": -0.47925002583741905,
+        "validation_median_sharpe": 0.0,
+        "validation_non_positive_ratio": 0.6666666666666666,
+        "validation_sharpes": [
+          0.0,
+          -0.979707523504117,
+          0.3915446896880564
+        ],
+        "validation_mdds": [
+          0.0,
+          -0.008337801479272655,
+          -0.0055021359351866694
+        ],
+        "validation_turnovers": [
+          0.0,
+          0.017363774512479512,
+          0.020562944456829026
+        ]
+      },
+      {
+        "target_size": 4,
+        "symbols": [
+          "SPY",
+          "SMH",
+          "SOXX",
+          "XBI"
+        ],
+        "score": -2.3563550810622726,
+        "validation_median_sharpe": -1.6394829746202444,
+        "validation_non_positive_ratio": 1.0,
+        "validation_sharpes": [
+          0.0,
+          -1.6394829746202444,
+          -1.9614377267610508
+        ],
+        "validation_mdds": [
+          0.0,
+          -0.016495152559837578,
+          -0.019440387295635353
+        ],
+        "validation_turnovers": [
+          0.0,
+          0.021565768961301426,
+          0.03987245993960849
+        ]
+      },
+      {
+        "target_size": 4,
+        "symbols": [
+          "SPY",
+          "SMH",
+          "SOXX",
+          "XLE"
+        ],
+        "score": -0.9463165777475955,
+        "validation_median_sharpe": 0.0,
+        "validation_non_positive_ratio": 1.0,
+        "validation_sharpes": [
+          0.0,
+          0.0,
+          -3.7871217441755722
+        ],
+        "validation_mdds": [
+          0.0,
+          0.0,
+          -0.008240646513100858
+        ],
+        "validation_turnovers": [
+          0.0,
+          0.0,
+          0.013032513782821997
+        ]
+      },
+      {
+        "target_size": 4,
+        "symbols": [
+          "SPY",
+          "SMH",
+          "XBI",
+          "XLE"
+        ],
+        "score": -0.5830446789389535,
+        "validation_median_sharpe": 0.0,
+        "validation_non_positive_ratio": 0.6666666666666666,
+        "validation_sharpes": [
+          0.0,
+          0.0,
+          2.1188710298034192
+        ],
+        "validation_mdds": [
+          0.0,
+          0.0,
+          -0.000464956188941712
+        ],
+        "validation_turnovers": [
+          0.0,
+          0.0,
+          0.010339286249578689
+        ]
+      },
+      {
+        "target_size": 4,
+        "symbols": [
+          "SPY",
+          "SMH",
+          "XBI",
+          "XLF"
+        ],
+        "score": -0.4557151964908315,
+        "validation_median_sharpe": 0.0,
+        "validation_non_positive_ratio": 0.6666666666666666,
+        "validation_sharpes": [
+          0.0,
+          -0.8981442440466617,
+          0.22663827924017318
+        ],
+        "validation_mdds": [
+          0.0,
+          -0.01195635310954446,
+          -0.0025464456872335006
+        ],
+        "validation_turnovers": [
+          0.0,
+          0.017580225377926348,
+          0.009561966693072736
+        ]
+      },
+      {
+        "target_size": 4,
+        "symbols": [
+          "SPY",
+          "SMH",
+          "XLE",
+          "XLF"
+        ],
+        "score": -0.41295469444869215,
+        "validation_median_sharpe": -0.19968759215702345,
+        "validation_non_positive_ratio": 1.0,
+        "validation_sharpes": [
+          -0.19968759215702345
+        ],
+        "validation_mdds": [
+          -0.14216151190305504
+        ],
+        "validation_turnovers": [
+          0.0004966887417218543
+        ]
+      },
+      {
+        "target_size": 4,
+        "symbols": [
+          "SPY",
+          "SOXX",
+          "XBI",
+          "XLE"
+        ],
+        "score": -2.4795651483273713,
+        "validation_median_sharpe": -1.747666523527282,
+        "validation_non_positive_ratio": 1.0,
+        "validation_sharpes": [
+          0.0,
+          -1.747666523527282,
+          -2.1024774659757095
+        ],
+        "validation_mdds": [
+          0.0,
+          -0.01683165572098455,
+          -0.01721843780488086
+        ],
+        "validation_turnovers": [
+          0.0,
+          0.021547973942709835,
+          0.043561852784981744
+        ]
+      },
+      {
+        "target_size": 4,
+        "symbols": [
+          "SPY",
+          "SOXX",
+          "XBI",
+          "XLF"
+        ],
+        "score": -2.1061934225151635,
+        "validation_median_sharpe": -1.3601116847773815,
+        "validation_non_positive_ratio": 1.0,
+        "validation_sharpes": [
+          0.0,
+          -2.396887524969498,
+          -1.3601116847773815
+        ],
+        "validation_mdds": [
+          0.0,
+          -0.010473008279884066,
+          -0.010567952098666233
+        ],
+        "validation_turnovers": [
+          0.0,
+          0.007096033340071277,
+          0.039120828722316786
+        ]
+      },
+      {
+        "target_size": 4,
+        "symbols": [
+          "SPY",
+          "SOXX",
+          "XLE",
+          "XLF"
+        ],
+        "score": -1.0568994903406579,
+        "validation_median_sharpe": -0.11358065408086845,
+        "validation_non_positive_ratio": 1.0,
+        "validation_sharpes": [
+          0.0,
+          -0.11358065408086845,
+          -3.803635113545771
+        ],
+        "validation_mdds": [
+          0.0,
+          -0.005351159636258429,
+          -0.015602976549688008
+        ],
+        "validation_turnovers": [
+          0.0,
+          0.015968070582556292,
+          0.028606328533859356
+        ]
+      },
+      {
+        "target_size": 4,
+        "symbols": [
+          "SPY",
+          "XBI",
+          "XLE",
+          "XLF"
+        ],
+        "score": -0.9181630394007272,
+        "validation_median_sharpe": -0.3424046593963041,
+        "validation_non_positive_ratio": 1.0,
+        "validation_sharpes": [
+          0.0,
+          -0.7387695223515252,
+          -0.3424046593963041
+        ],
+        "validation_mdds": [
+          0.0,
+          -0.013062281333123038,
+          -0.0018399763744363362
+        ],
+        "validation_turnovers": [
+          0.0,
+          0.01956984595842081,
+          0.0029101847395608263
+        ]
+      },
+      {
+        "target_size": 5,
+        "symbols": [
+          "SPY",
+          "SMH",
+          "SOXX",
+          "XBI",
+          "XLE"
+        ],
+        "score": -2.3932511274448673,
+        "validation_median_sharpe": -1.4923286518891943,
+        "validation_non_positive_ratio": 1.0,
+        "validation_sharpes": [
+          0.0,
+          -1.4923286518891943,
+          -3.8725955271678134
+        ],
+        "validation_mdds": [
+          0.0,
+          -0.011384757793324374,
+          -0.021492640508650296
+        ],
+        "validation_turnovers": [
+          0.0,
+          0.022291992015468512,
+          0.04007236362578527
+        ]
+      },
+      {
+        "target_size": 5,
+        "symbols": [
+          "SPY",
+          "SMH",
+          "SOXX",
+          "XBI",
+          "XLF"
+        ],
+        "score": -0.5348434883408024,
+        "validation_median_sharpe": 0.0,
+        "validation_non_positive_ratio": 0.6666666666666666,
+        "validation_sharpes": [
+          0.0,
+          -1.6276985570392697,
+          0.14659483158435396
+        ],
+        "validation_mdds": [
+          0.0,
+          -0.0033820513110451866,
+          -0.008147662769839803
+        ],
+        "validation_turnovers": [
+          0.0,
+          0.004882921461046573,
+          0.028577794366256987
+        ]
+      },
+      {
+        "target_size": 5,
+        "symbols": [
+          "SPY",
+          "SMH",
+          "SOXX",
+          "XLE",
+          "XLF"
+        ],
+        "score": -3.6983874564910226,
+        "validation_median_sharpe": -2.770428762359881,
+        "validation_non_positive_ratio": 1.0,
+        "validation_sharpes": [
+          0.0,
+          -2.770428762359881,
+          -4.100004407716088
+        ],
+        "validation_mdds": [
+          0.0,
+          -0.008356739699954319,
+          -0.007415709012129068
+        ],
+        "validation_turnovers": [
+          0.0,
+          0.009773399054158074,
+          0.013375769229458599
+        ]
+      },
+      {
+        "target_size": 5,
+        "symbols": [
+          "SPY",
+          "SMH",
+          "XBI",
+          "XLE",
+          "XLF"
+        ],
+        "score": -0.47211084537862663,
+        "validation_median_sharpe": 0.0,
+        "validation_non_positive_ratio": 0.6666666666666666,
+        "validation_sharpes": [
+          0.0,
+          -0.9875816124898404,
+          0.30080159721730954
+        ],
+        "validation_mdds": [
+          0.0,
+          -0.015713940429928797,
+          -0.003616539268899155
+        ],
+        "validation_turnovers": [
+          0.0,
+          0.019827296935378484,
+          0.011959620550386683
+        ]
+      },
+      {
+        "target_size": 5,
+        "symbols": [
+          "SPY",
+          "SOXX",
+          "XBI",
+          "XLE",
+          "XLF"
+        ],
+        "score": -0.38130183122120515,
+        "validation_median_sharpe": 0.0,
+        "validation_non_positive_ratio": 0.6666666666666666,
+        "validation_sharpes": [
+          0.0,
+          -0.24219422524613624,
+          0.21141326734486005
+        ],
+        "validation_mdds": [
+          0.0,
+          -0.007554177080546509,
+          -0.005569766960378697
+        ],
+        "validation_turnovers": [
+          0.0,
+          0.01636860502341399,
+          0.026339806825991092
+        ]
+      },
+      {
+        "target_size": 6,
+        "symbols": [
+          "SPY",
+          "SMH",
+          "SOXX",
+          "XBI",
+          "XLE",
+          "XLF"
+        ],
+        "score": -0.47925002583741905,
+        "validation_median_sharpe": 0.0,
+        "validation_non_positive_ratio": 0.6666666666666666,
+        "validation_sharpes": [
+          0.0,
+          -0.979707523504117,
+          0.3915446896880564
+        ],
+        "validation_mdds": [
+          0.0,
+          -0.008337801479272655,
+          -0.0055021359351866694
+        ],
+        "validation_turnovers": [
+          0.0,
+          0.017363774512479512,
+          0.020562944456829026
+        ]
+      }
+    ],
+    "selected_score": -0.38130183122120515,
+    "selected_train_metrics": {
+      "validation_sharpes": [
+        0.0,
+        -0.24219422524613624,
+        0.21141326734486005
+      ],
+      "validation_mdds": [
+        0.0,
+        -0.007554177080546509,
+        -0.005569766960378697
+      ],
+      "validation_turnovers": [
+        0.0,
+        0.01636860502341399,
+        0.026339806825991092
+      ],
+      "validation_non_positive_ratio": 0.6666666666666666,
+      "median_validation_sharpe": 0.0,
+      "objective_used": "nested_validation"
+    },
+    "selected_target_size": 5,
+    "candidate_pool": [
+      "SMH",
+      "SOXX",
+      "SPY",
+      "XBI",
+      "XLE",
+      "XLF"
+    ]
+  },
+  "is_metrics": {
+    "starting_equity": 1000000.0,
+    "ending_equity": 931075.6527688007,
+    "total_return": -0.06892434723119922,
+    "annualized_return": -0.011856104090926967,
+    "annualized_volatility": 0.048864475262683095,
+    "sharpe": -0.21974694517898477,
+    "sortino": -0.32432601215795837,
+    "max_drawdown": -0.11463958878587244,
+    "profit_factor": 0.9189990302276286,
+    "trade_count": 5.0,
+    "avg_exposure": 0.0552317880794702,
+    "avg_turnover": 0.0006622516556291391
+  },
+  "oos_metrics": {
+    "starting_equity": 931075.6527688007,
+    "ending_equity": 1079505.9370788943,
+    "total_return": 0.15941807077512626,
+    "annualized_return": 0.16192179810306717,
+    "annualized_volatility": 0.15403520398113238,
+    "sharpe": 1.0513127806620377,
+    "sortino": 1.7667735300906813,
+    "max_drawdown": -0.12505766996409295,
+    "profit_factor": 1.1992944164929686,
+    "trade_count": 5.0,
+    "avg_exposure": 0.856,
+    "avg_turnover": 0.004
+  },
+  "benchmark_metrics": {
+    "in_sample": {
+      "starting_equity": 1000000.0,
+      "ending_equity": 1691432.749753346,
+      "total_return": 0.6914327497533459,
+      "annualized_return": 0.0917437956727909,
+      "annualized_volatility": 0.18601854952356606,
+      "sharpe": 0.5655065962601793,
+      "max_drawdown": -0.32446195367244046,
+      "profit_factor": 1.1133672478185255
+    },
+    "out_of_sample": {
+      "starting_equity": 931075.6527688007,
+      "ending_equity": 1154221.8027710752,
+      "total_return": 0.23966489655130618,
+      "annualized_return": 0.2435549806623829,
+      "annualized_volatility": 0.13414270017732258,
+      "sharpe": 1.692397615091731,
+      "max_drawdown": -0.09903706274918767,
+      "profit_factor": 1.312209396781702
+    }
+  },
+  "verdict": {
+    "status": "REJECTED",
+    "summary": "OOS performance does not satisfy the minimum robustness gate under strict execution frictions."
+  },
+  "module1": {
+    "bars": 8800,
+    "stationary": 8800,
+    "events": 500,
+    "labels": 500
+  },
+  "oos_trade_count": 343,
+  "report_txt": "artifacts\\walkforward_leveraged_search_alpha_validation\\walkforward_report.txt",
+  "report_pdf": "artifacts\\walkforward_leveraged_search_alpha_validation\\walkforward_report.pdf",
+  "curves_png": "artifacts\\walkforward_leveraged_search_alpha_validation\\walkforward_equity_curves.png"
+}

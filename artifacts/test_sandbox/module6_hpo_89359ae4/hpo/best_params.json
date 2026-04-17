@@ -1,0 +1,27 @@
+{
+  "objective": {
+    "name": "module5_meta_strategy_sharpe",
+    "best_value": 0.0,
+    "trial_number": 0
+  },
+  "module1": {
+    "fracdiff_d": 0.4,
+    "weight_eps": 7.969454818643937e-05
+  },
+  "module3": {
+    "num_leaves": 115,
+    "learning_rate": 0.015751320499779727,
+    "feature_fraction": 0.5624074561769746
+  },
+  "module4": {
+    "num_leaves": 40,
+    "learning_rate": 0.0013066739238053278,
+    "feature_fraction": 0.846470458309974
+  },
+  "trial_user_attributes": {
+    "meta_strategy_mdd": 0.0,
+    "alpha_accuracy": 0.8392857142857143,
+    "meta_precision": 0.8561643835616438,
+    "events": 218
+  }
+}

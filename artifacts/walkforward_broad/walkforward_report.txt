@@ -1,0 +1,27 @@
+RESEARCH WALKFORWARD BACKTEST (60m)
+
+Universe               : SPY, QQQ, IWM, TQQQ, LQD, GLD, HYG, TLT, SOXL, VOO, IBIT, SQQQ, RSP, IVV, XLF, TSLL, SMH, DIA, XLV, XLI, XLK, XLE, EFA, EEM, SOXS, SGOV, GDX, XLP, FXI, SOXX, VTI, SLV, IEFA, XLU, VEA, XLY, KRE, BIL, NVDL, XBI, EWZ, ETHA, IEF, VCIT, AGG, QQQM, KWEB, IEMG, EMB, ARKK
+
+PHASE 1: IN-SAMPLE (2025-02-20 to 2025-10-31)
+============================================================
+Starting Equity         : $1,000,000.00
+Ending Equity           : $982,645.44
+Total Return            : -1.74%
+Annualized Return       : -2.49%
+Annualized Volatility   : +0.24%
+Sharpe Ratio            : -10.35
+Max Drawdown            : -1.74%
+
+PHASE 2: OUT-OF-SAMPLE (2025-11-01 to 2026-02-27)
+============================================================
+Starting Equity         : $982,645.44
+Ending Equity           : $872,888.10
+Total Return            : -11.17%
+Annualized Return       : -31.07%
+Annualized Volatility   : +1.55%
+Sharpe Ratio            : -23.98
+Max Drawdown            : -11.29%
+
+[VERDICT]
+Status                 : REJECTED
+OOS performance does not satisfy the minimum robustness gate under strict execution frictions.

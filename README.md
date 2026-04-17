@@ -56,15 +56,6 @@ python -m http.server 8080 --directory .\artifacts\hydrapredict5_site
 Open:
   http://localhost:8080
 
-## Production Hosting
-
-Any static host works (Netlify, Vercel static, GitHub Pages, S3 + CloudFront, Nginx).
-
-Upload the full contents of:
-  artifacts/hydrapredict5_site/
-
-No server runtime is required after build.
-
 ## Project Entrypoints
 
   run_walkforward_backtest.py : historical walkforward evaluation
